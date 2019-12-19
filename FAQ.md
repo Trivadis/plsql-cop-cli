@@ -148,6 +148,27 @@ BEGIN
 END p;
 ```
 
+### Error Logging Clause
+The keyword `log` is supported as table name and table alias. As a side effect `DELETE` and `INSERT` statements with an `error_logging_clause` but without a `where_clause` and without table alias cannot be supported.
+
+Example of supported `INSERT` statement with an `error_logging_clause`
+
+```sql
+INSERT INTO deptsal (dept_no, dept_name, salary)
+     SELECT dept_no, dept_name, salary
+       FROM source_syn s
+ LOG ERRORS INTO deptsal_err REJECT LIMIT 10;
+```
+
+Example of unsupported `INSERT` statement with an `error_logging_clause` (`source_syn` has no alias)
+
+```sql
+INSERT INTO deptsal (dept_no, dept_name, salary)
+     SELECT dept_no, dept_name, salary
+       FROM source_syn
+ LOG ERRORS INTO deptsal_err REJECT LIMIT 10;
+````
+
 ### PL/SQL Source Text Wrapping
 
 Since PL/SQL Cop and PL/SQL Analyzer do not include a PL/SQL unwrap utility, the use of wrapped PL/SQL code is not supported.
