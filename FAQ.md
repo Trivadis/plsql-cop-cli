@@ -4,11 +4,11 @@
 
 When you are using only `Y` and `N` values for a PL/SQL variable, PL/SQL Cop produces the following message: 
 
-    [G-2410](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v3.6/4-language-usage/2-variables-and-types/4-boolean-data-types/g-2410/): Try to use boolean data type for values with dual meaning.
+[G-2410](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v3.6/4-language-usage/2-variables-and-types/4-boolean-data-types/g-2410/): Try to use boolean data type for values with dual meaning.
 
 But if you are using other values such as `Da` and `Net`, you do not get such a message. PL/SQL Cop tries to minimize the number of false positives, which results sometimes in false negatives. Consider a variable containing a value for sex. Valid values are `male` and `female`. Even if this is a variable with dual meaning you do not want to represent the sex variable as a boolean type. So PL/SQL Cop checks if exactly two of the following values are stored in a variable: 
 
-    `TRUE`, `FALSE`, `T`, `F`, `0`, `1`, `2`, `YES`, `NO`, `Y`, `N`, `JA`, `NEIN`, `J`, `SI`, `S`, `OUI`, `NON`, `O`, `L_TRUE`, `L_FALSE`, `CO_TRUE`, `CO_FALSE`.
+`TRUE`, `FALSE`, `T`, `F`, `0`, `1`, `2`, `YES`, `NO`, `Y`, `N`, `JA`, `NEIN`, `J`, `SI`, `S`, `OUI`, `NON`, `O`, `L_TRUE`, `L_FALSE`, `CO_TRUE`, `CO_FALSE`.
 
 If other values are detected, the message [G-2410](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v3.6/4-language-usage/2-variables-and-types/4-boolean-data-types/g-2410/) will not be shown.
 
@@ -68,7 +68,7 @@ The use of PL/SQL and SQL keywords as unquoted identifiers are generally not sup
 
 Oracle is quite gracious in that area and therefore we are eager to support more and more keywords as unquoted identifiers with every release, but the following keywords are causing conflicts in certain parts of the grammar and the use as literals should be therefore avoided: 
 
-    `CROSS`, `CURSOR`, `END`, `FULL`, `FUNCTION`, `INNER`, `JOIN`, `LEFT`, `MODEL`, `OUTER`, `RIGHT`, `ROWTYPE`, `TYPE`.
+`CROSS`, `CURSOR`, `END`, `FULL`, `FUNCTION`, `INNER`, `JOIN`, `LEFT`, `MODEL`, `OUTER`, `RIGHT`, `ROWTYPE`, `TYPE`.
 
 ### Quote Delimiter Characters
 
@@ -80,7 +80,7 @@ nq'[that’s very cool!]'
 
 The following quote characters-pairs are supported: 
 
-    `$$`, `##`, `@@`, `££`, `""`, `||`, `()`, `{}`, `[]`, `<>`, `!!`, `++`, `~~`, `//`. 
+`$$`, `##`, `@@`, `££`, `""`, `||`, `()`, `{}`, `[]`, `<>`, `!!`, `++`, `~~`, `//`. 
 
 All other quote characters lead to parse errors.
 
