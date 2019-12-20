@@ -14,7 +14,7 @@ Accessing data dictionary views would allow to extend the scope of validations. 
 
 ## Guidelines
 
-### [G-1050]: Avoid using literals in your code.
+### [G-1050](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v3.6/4-language-usage/1-general/g-1050/): Avoid using literals in your code.
 
 It is very difficult to write code without violating this guideline. To make it a bit more feasible the numeric literals `0` and `1` are ignored. 
 
