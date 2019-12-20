@@ -56,7 +56,7 @@ Please file your bug reports, enhancement requests, questions and other support 
 
 ## Frequently Asked Questions
 
-see [FAQ.md](FAQ.md).
+see [Frequently Ased Questions](FAQ.md).
 
 ## Further Information
 
