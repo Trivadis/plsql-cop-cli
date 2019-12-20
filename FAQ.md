@@ -210,4 +210,4 @@ The preview/trial version of PL/SQL Cop is licensed under the Creative Commons A
 
 The trial/preview version provides full functionality but is limited in time and volume.
 
-The commercial version of PL/SQL Cop requires a separate software license agreement.
+For production use a separate software license agreement is required.
