@@ -75,9 +75,11 @@ The prompt must not contain unterminated single (`'`) or double quotes (`"`).
 
 The use of PL/SQL and SQL keywords as unquoted identifiers are generally not supported, due to the fact, that every single keyword needs to be treated as an exception. 
 
-Oracle is quite gracious in that area and therefore we are eager to support more and more keywords as unquoted identifiers with every release, but the following keywords are causing conflicts in certain parts of the grammar and the use as literals should be therefore avoided: 
+Oracle is quite gracious in that area and therefore we strive to support more and more keywords as unquoted identifiers with each release, but the following keywords are causing conflicts in certain parts of the grammar and the use as literals should therefore be avoided: 
 
-`CROSS`, `CURSOR`, `END`, `FULL`, `FUNCTION`, `INNER`, `JOIN`, `LEFT`, `MODEL`, `OUTER`, `RIGHT`, `ROWTYPE`, `TYPE`.
+`CROSS`, `CURSOR`, `END`, `EXCLUDE`, `FULL`, `FUNCTION`, `INSTANTIABLE`, `INNER`, `JOIN`, `LEFT`, `MODEL`, `OFFSET`, `OUTER`, `RIGHT`, `ROWTYPE`, `TYPE`.
+
+Query the dictionary view `V$RESERVED_WORDS` for a list of keywords. Please note that a parsing error caused by using a keyword as an unquoted identifier is not considered a PL/SQL COP bug, regardless of the keyword categorization by columns such as `RESERVED`.
 
 ## Quote Delimiter Characters
 
