@@ -46,6 +46,62 @@ The editor is mainly provided to understand the PL/SQL model better. The full mo
 
 You find all releases and release information [here](https://github.com/Trivadis/plsql-cop-cli/releases).
 
+## Installation
+
+1. Uncompress the distributed PL/SQL Cop archive file into a folder of your choice. 
+
+    The archive file contains the following files in the root directory: `ReadMe.html`, `tvdcc.jar`, `tvdcc.sh`, `tvdcc.cmd`, `PLSQL-and-SQL-Coding-Guidelines.html` and the subdirectories `lib`, `eclipse`, `plugin` and `sample`. SQL scripts with good and bad examples for every guideline are provided in the sample directory.
+
+2. Amend the settings for `JAVA_HOME` in tvdcc.cmd to meet your environment settings.
+
+    This is necessary on Windows only, and only if the `java.exe` cannot be found in the path. Use at least a Java 7 runtime environment (JRE) or development kit (JDK) for JAVA_HOME.
+
+3. Include `TVDCC_HOME` in your PATH environment variable for handy interactive usage.
+
+4. Optionally copy your commercial license file into the `TVDCC_HOME` directory. For simplicity name the file `tvdcc.lic`.
+
+## Usage
+
+If PL/SQL cop is invoked without arguments, the following help screen is shown, after the copyright information:
+
+```
+usage: tvdcc path=<path> [options]
+
+mandatory arguments: 
+  path=<path>            path to directory containing files to be checked, e.g ./mysourceDir
+
+options: 
+  -help, -h, -?          print this message
+  filter=<filter>        regular expression to filter files, e.g. "myfile.sql" or "(pks|pkb|pkg)$" or "^((?!guideline_7210_65).)*$"
+  timeout=<seconds>      maximum seconds allowed to load and parse a file, e.g. 10
+  complexity=<value>     list PL/SQL units with cyclomatic complexity greater than this value, e.g. 10
+  output=<name>          file name incl. path of output file, e.g ./myreport.html or ./myreport.xlsx
+  template=<name>        file name incl. path of XSL stylesheet to create HTML output, e.g ./myhtml.xsl
+  excel={true|false}     create Excel output file, default is true
+  html={true|false}      create HTML output file, default is true
+  transonly={true|false} transform temporary XML file only, default is false
+  cleanup={true|false}   remove temporary XML file, default is true
+  check=<list>           comma separated list of guidelines, severities, characteristics to be checked,
+                         e.g. "blocker, critical, major, efficiency, 1040", default all guidelines
+                         guidelines: 1010, 1020, 1030, 1040, ..., 8410, 8510
+                         severities: blocker, critical, major, minor, info
+                         characteristics: changeability, efficiency, maintainability, portability,
+                                          reliability, reusability, security, testability
+                         invalid values are ignored
+  skip=<list>            comma separated list of guidelines, serverities, characteristics not to be checked,
+                         e.g. "7460, info, portability, testability", invalid values are ignored
+  nosonar=false          ignore "-- NOSONAR" marker comments (do not suppress warnings)
+  license=<name>         name incl. path to license file, default tvdcc.lic in the root folder
+  propertyfile=<name>    load properties from file, e.g. ./tvdcc.properties
+  validator=<name>       decendent of PLSQLJavaValidator and implements PLSQLCopValidator interface, 
+                         default is com.trivadis.tvdcc.validators.TrivadisGuidelines3
+  genmodel={true|false}  generate SonarQube XML model files, default is false.
+```
+
+Please note that PL/SQL Cop applies by default a filter to support the following file extensions: `.sql`, `.prc`, `.fnc`, `.pks`, `.pkb`, `.trg`, `.vw`, `.tps`, `.tbp`, `.plb`, `.pls`, `.rcv`, `.spc`, `.typ`, `.aqt`, `.aqp`, `.ctx`, `.dbl`, `.tab`, `.dim`, `.snp`, `.con`, `.collt`, `.seq`, `.syn`, `.grt`, `.sp`, `.spb`, `.sps`, `.pck`. 
+
+The value of all options will be included in the output files and on the console output. 
+
 ## Issues
 Please file your bug reports, enhancement requests, questions and other support requests within [Github's issue tracker](https://help.github.com/articles/about-issues/).
 
