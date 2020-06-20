@@ -22,7 +22,7 @@ You might find use cases where it feels ridiculous introducing a constant for a 
 
 1. Disable the check for this guideline completely
 2. Disable checks for a particular line by adding a `NOSONAR` comment
-3. Write a own validator check, overriding the default behavior (see [this example](https://github.com/Trivadis/plsql-cop-validators/blob/master/src/main/java/com/trivadis/tvdcc/validators/OverrideTrivadisGuidelines.xtend#L67) ignoring calls of the logger framework)
+3. Write a own validator check, overriding the default behavior (see [this example](https://github.com/Trivadis/plsql-cop-validators/blob/main/src/main/java/com/trivadis/tvdcc/validators/OverrideTrivadisGuidelines.xtend#L67) ignoring calls of the logger framework)
 
 It's currently not possible to configure the behavior of this guideline check.
 
