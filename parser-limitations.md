@@ -159,6 +159,36 @@ BEGIN
 END p;
 ```
 
+## FOR LOOP Statement
+
+The `lower_bound` and `upper_bound` are separated with a `..`. Whitspaces before and after `..` are not required according the PL/SQL grammar. 
+
+However, if the `lower_bound` expression ends on a number, then a one of the following is required:
+
+- a whitespace before the `..`
+- a whitespace after the `..`
+- `lower_bound` in parenthesis
+
+Example of supported `FOR LOOP`:
+
+```sql
+BEGIN
+   FOR i IN length(l_value)+1 .. 500 LOOP
+      dbms_output.put_line('supported');
+   END LOOP;
+END;
+```
+
+Example of unsupported `FOR LOOP`:
+
+```sql
+BEGIN
+   FOR i IN length(l_value)+1..500 LOOP
+      dbms_output.put_line('unsupported');
+   END LOOP;
+END;
+```
+
 ## Error Logging Clause
 The keyword `log` is supported as table name and table alias. As a side effect `DELETE` and `INSERT` statements with an `error_logging_clause` but without a `where_clause` and without table alias cannot be supported.
 
