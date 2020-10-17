@@ -14,6 +14,27 @@ Accessing data dictionary views would allow to extend the scope of validations. 
 
 ## Guidelines
 
+### [G-1030](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v3.6/4-language-usage/1-general/g-1030/): Avoid defining variables that are not used.
+
+This guideline is checked for CreateFunction, CreatePackageBody, CreateProcedure, CreateTrigger, CreateTypeBody and PlsqlUnit with a simplified scope. Variable declarations and usages are identified by name. The real PL/SQL scope is not honored. This might lead to false negatives. Here's an example:
+
+```sql
+CREATE OR REPLACE PROCEDURE p IS
+   l_var INTEGER;     -- used
+BEGIN
+   <<myblock>>
+   DECLARE
+      l_var INTEGER;  -- not used
+   BEGIN
+      p.l_var := 1;
+   END myblock;
+   sys.dbms_output.put_line('l_var: ' || l_var);
+END p;
+/
+```
+
+The `l_var` variable defined within the `myblock` is never used. It's a violation of G-1030. However, a G-2170 (never overload variables) violation is thrown in this case.
+
 ### [G-1050](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v3.6/4-language-usage/1-general/g-1050/): Avoid using literals in your code.
 
 It is very difficult to write code without violating this guideline. To make it a bit more feasible the numeric literals `0` and `1` are ignored. 
@@ -38,6 +59,29 @@ But if you are using other values such as `Da` and `Net`, you do not get such a 
 
 If other values are detected, no violation of G-2410 is reported.
 
+This guideline is checked for CreateFunction, CreatePackageBody, CreateProcedure, CreateTrigger, CreateTypeBody and PlsqlUnit with a simplified scope. Variable declarations and usages are identified by name. The real PL/SQL scope is not honored. This might lead to false negatives. Here's an example:
+
+```sql
+CREATE PACKAGE BODY pkg IS
+   PROCEDURE p1 IS
+      l_var INTEGER;
+   BEGIN
+      l_var  := 1;
+      l_var  := 2;
+   END p1;
+   PROCEDURE p2 IS
+      l_var INTEGER;
+   BEGIN
+      l_var  := 0;
+      l_var  := 1;
+   END p2;
+END pkg;
+/
+```
+
+In this case for both `l_var` declarations a G-2410 violation should be thrown. Due to the simplified analysis scope three values are found for `l_var` and therefore no violation is thrown.
+
+
 ### [G-3160](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v3.6/4-language-usage/3-dml-and-sql/1-general/g-3160/): Avoid virtual columns to be visible.
 
 This check is not yet implemented. 
@@ -55,6 +99,62 @@ Requires `CREATE TABLE` and `ALTER TABLE` parser support or access to the Oracle
 This check is not implemented.
 
 Requires further definition regarding naming of the error/logging framework and its minimal use in PL/SQL code. However, could be implemented as a custom validator.
+
+### [G-7140](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v3.6/4-language-usage/7-stored-objects/1-general/g-7140/): Always ensure that locally defined procedures or functions are referenced.
+
+This guideline is checked for CreateFunction, CreatePackageBody, CreateProcedure, CreateTrigger, CreateTypeBody and PlsqlUnit with a simplified scope. Variable declarations and usages are identified by name. The real PL/SQL scope is not honored. This might lead to false negatives. Here's an example:
+
+```sql
+CREATE PACKAGE BODY pkg IS
+   PROCEDURE p1 IS
+      FUNCTION f RETURN NUMBER     -- unused
+         DETERMINISTIC
+      IS
+      BEGIN
+         RETURN 1;
+      END f;
+   BEGIN
+      NULL;
+   END p1;
+   PROCEDURE p2 IS
+      FUNCTION f RETURN NUMBER     -- used
+         DETERMINISTIC
+      IS
+      BEGIN
+         RETURN 1;
+      END f;
+   BEGIN
+      sys.dbms_output.put_line(to_char(f()));
+   END p2;
+END pkg;
+/
+```
+
+The first function `f` is not used. However, it is not reported due to the simplified analysis scope. Another function `f` is found in the scope and this function is used. 
+
+### [G-7150](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v3.6/4-language-usage/7-stored-objects/1-general/g-7150/): Try to remove unused parameters.
+
+This guideline is checked for CreateFunction, CreatePackageBody, CreateProcedure, CreateTrigger, CreateTypeBody and PlsqlUnit with a simplified scope. Variable declarations and usages are identified by name. The real PL/SQL scope is not honored. This might lead to false negatives. Here's an example:
+
+```sql
+CREATE PACKAGE BODY pkg IS
+   PROCEDURE p (
+      in_param IN DATE         -- unused
+   ) IS
+   BEGIN
+      NULL;
+   END p;
+   PROCEDURE p (
+      in_param IN INTEGER      -- used
+   ) IS
+   BEGIN
+      sys.dbms_output.put_line(to_char(in_param));
+   END p2;
+END pkg;
+/
+```
+
+In the first procedure `p` the parameter `in_param` is not used. However, it is not reported due to the simplified analysis scope. Another procedure `p` has also a parameter `in_param` that has been used. 
 
 ### [G-8410](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v3.6/4-language-usage/8-patterns/4-ensure-single-execution-at-a-time-of-a-program-unit/g-8410/): Always use application locks to ensure a program unit only running once at a given time.
 
