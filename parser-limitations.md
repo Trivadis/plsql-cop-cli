@@ -8,7 +8,7 @@ If your SQL*Plus script runs successfully against an Oracle database but PL/SQL 
 
 ## SQL\*Plus Parser
 
-The SQL\*Plus parser is a so-called shallow parser. It covers the bare minimum to identify SQL\*Plus commands, SQL statements and anonymous PL/SQL blocks. It is designed for basic metric calculation and for collaboration with the PL/SQL parser. It is specifically not designed for code validations.
+The SQL\*Plus parser is a so-called shallow parser. It covers the bare minimum to identify SQL\*Plus and SQLcl commands, SQL statements and anonymous PL/SQL blocks. It is designed for basic metric calculation and for collaboration with the PL/SQL parser. It is specifically not designed for code validations.
 
 ## PL/SQL Parser
 
@@ -209,6 +209,80 @@ INSERT INTO deptsal (dept_no, dept_name, salary)
        FROM source_syn
  LOG ERRORS INTO deptsal_err REJECT LIMIT 10;
 ```
+
+## Access Parameters of Inline External Tables
+
+The `obpaque_format_spec` clause has to be provided as string. Embedding the driver specific parameters directly are not supported. 
+
+Here's are examples of a supported and unsupported statement. These example are based on [Tim Hall's article "Inline External Teables in Oracle Database 18c"](https://oracle-base.com/articles/18c/inline-external-tables-18c).
+
+Supported example:
+
+```sql
+SELECT country_code, COUNT(*) AS amount
+FROM   EXTERNAL (
+         (
+           country_code  VARCHAR2(3),
+           object_id     NUMBER,
+           owner         VARCHAR2(128),
+           object_name   VARCHAR2(128)
+         )
+         TYPE oracle_loader
+         DEFAULT DIRECTORY tmp_dir1
+         ACCESS PARAMETERS (q'[
+           RECORDS DELIMITED BY NEWLINE
+           BADFILE tmp_dir1
+           LOGFILE tmp_dir1:'inline_ext_tab_%a_%p.log'
+           DISCARDFILE tmp_dir1
+           FIELDS CSV WITH EMBEDDED TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
+           MISSING FIELD VALUES ARE NULL (
+             country_code,
+             object_id,
+             owner,
+             object_name 
+           )]'
+        )
+        LOCATION ('gbr1.txt', 'gbr2.txt', 'ire1.txt', 'ire2.txt')
+        REJECT LIMIT UNLIMITED
+      ) sample (99) inline_ext_tab 
+GROUP BY country_code
+ORDER BY 1;
+```
+
+Unsupported example:
+
+```sql
+SELECT country_code, COUNT(*) AS amount
+FROM   EXTERNAL (
+         (
+           country_code  VARCHAR2(3),
+           object_id     NUMBER,
+           owner         VARCHAR2(128),
+           object_name   VARCHAR2(128)
+         )
+         TYPE oracle_loader
+         DEFAULT DIRECTORY tmp_dir1
+         ACCESS PARAMETERS (
+           RECORDS DELIMITED BY NEWLINE
+           BADFILE tmp_dir1
+           LOGFILE tmp_dir1:'inline_ext_tab_%a_%p.log'
+           DISCARDFILE tmp_dir1
+           FIELDS CSV WITH EMBEDDED TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
+           MISSING FIELD VALUES ARE NULL (
+             country_code,
+             object_id,
+             owner,
+             object_name 
+           )
+        )
+        LOCATION ('gbr1.txt', 'gbr2.txt', 'ire1.txt', 'ire2.txt')
+        REJECT LIMIT UNLIMITED
+      ) inline_ext_tab
+GROUP BY country_code
+ORDER BY 1;
+```
+
+The difference between the two statements is that the supported one provides the access parameters as string (see `q'[...]'`).
 
 ## PL/SQL Source Text Wrapping
 
