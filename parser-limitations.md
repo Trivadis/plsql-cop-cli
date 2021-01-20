@@ -212,9 +212,9 @@ INSERT INTO deptsal (dept_no, dept_name, salary)
 
 ## Access Parameters of Inline External Tables
 
-The `obpaque_format_spec` clause has to be provided as string. Embedding the driver specific parameters directly are not supported. 
+The `obpaque_format_spec` clause has to be provided as a string literal or as a subquery returning a CLOB. Embedding the driver specific parameters directly is not supported. 
 
-Here's are examples of a supported and unsupported statement. These example are based on [Tim Hall's article "Inline External Teables in Oracle Database 18c"](https://oracle-base.com/articles/18c/inline-external-tables-18c).
+Here are examples of a supported and an unsupported statement. These examples are based on [Tim Hall's article "Inline External Teables in Oracle Database 18c"](https://oracle-base.com/articles/18c/inline-external-tables-18c).
 
 Supported example:
 
@@ -282,7 +282,7 @@ GROUP BY country_code
 ORDER BY 1;
 ```
 
-The difference between the two statements is that the supported one provides the access parameters as string (see `q'[...]'`).
+Please note that the supported statement provides the access parameters as a string using `q'[...]'`.
 
 ## PL/SQL Source Text Wrapping
 
