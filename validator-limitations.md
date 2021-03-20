@@ -47,15 +47,15 @@ You might find use cases where it feels ridiculous introducing a constant for a 
 
 It's currently not possible to configure the behavior of this guideline check.
 
-### [G-1080](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/1-general/g-1080/) Avoid using the same expression on both sides of a relational comparison operator or a logical operator.
+### [G-1080](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/1-general/g-1080/): Avoid using the same expression on both sides of a relational comparison operator or a logical operator.
 
 This guideline was introduced in v4.0 and the check is not yet implemented.
 
-### [G-2135](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/2-variables-and-types/1-general/g-2135/) Avoid assigning values to local variables that are not used by a subsequent statement.
+### [G-2135](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/2-variables-and-types/1-general/g-2135/): Avoid assigning values to local variables that are not used by a subsequent statement.
 
 This guideline was introduced in v4.0 and the check is not yet implemented.
 
-### [G-2145](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/2-variables-and-types/1-general/g-2145/) Never self-assign a variable.
+### [G-2145](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/2-variables-and-types/1-general/g-2145/): Never self-assign a variable.
 
 This guideline was introduced in v4.0 and the check is not yet implemented.
 
@@ -93,19 +93,19 @@ END pkg;
 
 In this case for both `l_var` declarations a G-2410 violation should be thrown. Due to the simplified analysis scope three values are found for `l_var` and therefore no violation is thrown.
 
-### [G-2610](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/2-variables-and-types/6-cursor-variables/g-2610/) Never use self-defined weak ref cursor types.
+### [G-2610](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/2-variables-and-types/6-cursor-variables/g-2610/): Never use self-defined weak ref cursor types.
 
 This guideline was introduced in v4.0 and the check is not yet implemented.
 
-### [G-3115](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/3-dml-and-sql/1-general/g-3115/) Avoid self-assigning a column.
+### [G-3115](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/3-dml-and-sql/1-general/g-3115/): Avoid self-assigning a column.
 
 This guideline was introduced in v4.0 and the check is not yet implemented.
 
-### [G-3185](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/3-dml-and-sql/1-general/g-3185/) Never use ROWNUM at the same query level as ORDER BY.
+### [G-3185](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/3-dml-and-sql/1-general/g-3185/): Never use ROWNUM at the same query level as ORDER BY.
 
 This guideline was introduced in v4.0 and the check is not yet implemented.
 
-### [G-3195](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/3-dml-and-sql/1-general/g-3195/) Always use wildcards in a LIKE clause.
+### [G-3195](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/3-dml-and-sql/1-general/g-3195/): Always use wildcards in a LIKE clause.
 
 This guideline was introduced in v4.0 and the check is not yet implemented.
 
@@ -121,23 +121,27 @@ This check is not yet implemented.
 
 Requires `CREATE TABLE` and `ALTER TABLE` parser support or access to the Oracle Data Dicionary.
 
-### [G-3310](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/3-dml-and-sql/3-transaction-control/g-3310/) Never commit within a cursor loop.
+### [G-3310](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/3-dml-and-sql/3-transaction-control/g-3310/): Never commit within a cursor loop.
 
 This guideline was introduced in v4.0 and the check is not yet implemented.
 
-### [G-4250](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/4-control-structures/2-case-if-decode-nvl-nvl2-coalesce/g-4250/) Avoid using identical conditions in different branches of the same IF or CASE statement.
+### [G-3320](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/3-dml-and-sql/3-transaction-control/g-3320/): Try to move transactions within a non-cursor loop into procedures.
 
 This guideline was introduced in v4.0 and the check is not yet implemented.
 
-### [G-4260](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/4-control-structures/2-case-if-decode-nvl-nvl2-coalesce/g-4260/) Avoid inverting boolean conditions with NOT.
+### [G-4250](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/4-control-structures/2-case-if-decode-nvl-nvl2-coalesce/g-4250/): Avoid using identical conditions in different branches of the same IF or CASE statement.
 
 This guideline was introduced in v4.0 and the check is not yet implemented.
 
-### [G-4270](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/4-control-structures/2-case-if-decode-nvl-nvl2-coalesce/g-4270/) Avoid comparing boolean values to boolean literals.
+### [G-4260](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/4-control-structures/2-case-if-decode-nvl-nvl2-coalesce/g-4260/): Avoid inverting boolean conditions with NOT.
 
 This guideline was introduced in v4.0 and the check is not yet implemented.
 
-### [G-4325](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/4-control-structures/3-flow-control/g-4325/) Never reuse labels in inner scopes.
+### [G-4270](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/4-control-structures/2-case-if-decode-nvl-nvl2-coalesce/g-4270/): Avoid comparing boolean values to boolean literals.
+
+This guideline was introduced in v4.0 and the check is not yet implemented.
+
+### [G-4325](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/4-control-structures/3-flow-control/g-4325/): Never reuse labels in inner scopes.
 
 This guideline was introduced in v4.0 and the check is not yet implemented.
 
@@ -147,7 +151,7 @@ This check is not implemented.
 
 Requires further definition regarding naming of the error/logging framework and its minimal use in PL/SQL code. However, could be implemented as a custom validator.
 
-### [G-5080](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/5-exception-handling/g-5080/) Always use FORMAT_ERROR_BACKTRACE when using FORMAT_ERROR_STACK or SQLERRM.
+### [G-5080](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/5-exception-handling/g-5080/): Always use FORMAT_ERROR_BACKTRACE when using FORMAT_ERROR_STACK or SQLERRM.
 
 This guideline was introduced in v4.0 and the check is not yet implemented.
 
@@ -207,11 +211,11 @@ END pkg;
 
 In the first procedure `p` the parameter `in_param` is not used. However, it is not reported due to the simplified analysis scope. Another procedure `p` has also a parameter `in_param` that has been used. 
 
-### [G-7125](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/7-stored-objects/1-general/g-7125/) Always use CREATE OR REPLACE instead of CREATE alone.
+### [G-7125](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/7-stored-objects/1-general/g-7125/): Always use CREATE OR REPLACE instead of CREATE alone.
 
 This guideline was introduced in v4.0 and the check is not yet implemented.
 
-### [G-7170](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/7-stored-objects/1-general/g-7170/)
+### [G-7170](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/7-stored-objects/1-general/g-7170/): Avoid using an IN OUT parameter as IN or OUT only.
 
 This check is not implemented.
 
@@ -221,15 +225,15 @@ We cannot determine the usage of an `in out` parameter in a reliable way, especi
 
 This guideline was introduced in v4.0 and the check is not yet implemented.
 
-### [G-7330](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/7-stored-objects/3-procedures/g-7330/) Always assign values to OUT parameters.
+### [G-7330](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/7-stored-objects/3-procedures/g-7330/): Always assign values to OUT parameters.
 
 This guideline was introduced in v4.0 and the check is not yet implemented.
 
-### [G-7720](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/7-stored-objects/7-triggers/g-7720/) Never use multiple UPDATE OF in trigger event clause.
+### [G-7720](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/7-stored-objects/7-triggers/g-7720/): Never use multiple UPDATE OF in trigger event clause.
 
 This guideline was introduced in v4.0 and the check is not yet implemented.
 
-### [G-7730](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/7-stored-objects/7-triggers/g-7730/) Avoid multiple DML events per trigger if primary key is assigned in trigger.
+### [G-7730](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/7-stored-objects/7-triggers/g-7730/): Avoid multiple DML events per trigger if primary key is assigned in trigger.
 
 This guideline was introduced in v4.0 and the check is not yet implemented.
 
@@ -245,6 +249,14 @@ This check is not implemented.
 
 Algorithms to detect wrong, missing and right usages of this pattern are virtually impossible to implement without understanding the context of a certain PL/SQL code.
 
-### [G-9010](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/9-function-usage/g-9010/) Always use a format model in string to date/time conversion functions.
+### [G-9010](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/9-function-usage/g-9010/): Always use a format model in string to date/time conversion functions.
+
+This guideline was introduced in v4.0 and the check is not yet implemented.
+
+### [G-9020](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/9-function-usage/g-9020/): Try to use a format model and NLS_NUMERIC_CHARACTERS in string to number conversion functions.
+
+This guideline was introduced in v4.0 and the check is not yet implemented.
+
+### [G-9030](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/9-function-usage/g-9030/): Try to define a default value on conversion errors.
 
 This guideline was introduced in v4.0 and the check is not yet implemented.
