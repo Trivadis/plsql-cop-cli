@@ -211,6 +211,12 @@ In the first procedure `p` the parameter `in_param` is not used. However, it is 
 
 This guideline was introduced in v4.0 and the check is not yet implemented.
 
+### [G-7170](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/7-stored-objects/1-general/g-7170/)
+
+This check is not implemented.
+
+We cannot determine the usage of an `in out` parameter in a reliable way, especially when other units are involved which are maintained in another file.
+
 ### [G-7250](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/7-stored-objects/2-packages/g-7250/): Never use RETURN in package initialization block.
 
 This guideline was introduced in v4.0 and the check is not yet implemented.
