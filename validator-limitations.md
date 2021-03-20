@@ -101,14 +101,6 @@ This guideline was introduced in v4.0 and the check is not yet implemented.
 
 This guideline was introduced in v4.0 and the check is not yet implemented.
 
-### [G-3185](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/3-dml-and-sql/1-general/g-3185/): Never use ROWNUM at the same query level as ORDER BY.
-
-This guideline was introduced in v4.0 and the check is not yet implemented.
-
-### [G-3195](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/3-dml-and-sql/1-general/g-3195/): Always use wildcards in a LIKE clause.
-
-This guideline was introduced in v4.0 and the check is not yet implemented.
-
 ### [G-3160](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/3-dml-and-sql/1-general/g-3160/): Avoid virtual columns to be visible.
 
 This check is not implemented. 
@@ -120,6 +112,14 @@ Requires `CREATE TABLE` and `ALTER TABLE` parser support or access to the Oracle
 This check is not implemented. 
 
 Requires `CREATE TABLE` and `ALTER TABLE` parser support or access to the Oracle Data Dicionary.
+
+### [G-3185](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/3-dml-and-sql/1-general/g-3185/): Never use ROWNUM at the same query level as ORDER BY.
+
+This guideline was introduced in v4.0 and the check is not yet implemented.
+
+### [G-3195](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/3-dml-and-sql/1-general/g-3195/): Always use wildcards in a LIKE clause.
+
+This guideline was introduced in v4.0 and the check is not yet implemented.
 
 ### [G-3310](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/3-dml-and-sql/3-transaction-control/g-3310/): Never commit within a cursor loop.
 
