@@ -111,13 +111,13 @@ This guideline was introduced in v4.0 and the check is not yet implemented.
 
 ### [G-3160](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/3-dml-and-sql/1-general/g-3160/): Avoid virtual columns to be visible.
 
-This check is not yet implemented. 
+This check is not implemented. 
 
 Requires `CREATE TABLE` and `ALTER TABLE` parser support or access to the Oracle Data Dicionary.
 
 ### [G–3170](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/3-dml-and-sql/1-general/g-3170/): Always use DEFAULT ON NULL declarations to assign default values to table columns if you refuse to store NULL values.
 
-This check is not yet implemented. 
+This check is not implemented. 
 
 Requires `CREATE TABLE` and `ALTER TABLE` parser support or access to the Oracle Data Dicionary.
 
