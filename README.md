@@ -54,11 +54,38 @@ You find all releases and release information [here](https://github.com/Trivadis
 
 2. Amend the settings for `JAVA_HOME` in tvdcc.cmd to meet your environment settings.
 
-    This is necessary on Windows only, and only if the `java.exe` cannot be found in the path. Use at least a Java 7 runtime environment (JRE) or development kit (JDK) for JAVA_HOME.
+    This is necessary on Windows only, and only if the `java.exe` cannot be found in the path. Use at least a Java 8 runtime environment (JRE) or development kit (JDK) for JAVA_HOME.
 
 3. Include `TVDCC_HOME` in your PATH environment variable for handy interactive usage.
 
 4. Optionally copy your commercial license file into the `TVDCC_HOME` directory. For simplicity name the file `tvdcc.lic`.
+
+5. Ignoring JDK warnings
+
+    When using JDK 11 the following warnings are thrown:
+
+    ```
+    WARNING: An illegal reflective access operation has occurred
+    WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/local/bin/tvdcc/lib/guice-3.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+    WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2
+    WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+    WARNING: All illegal access operations will be denied in a future release
+    ```
+
+    This message is caused by https://github.com/google/guice/issues/1133 . It should be fixed in Guice 5.0.1. In future releases this warning should disappear, when our third party libraries have updated their dependencies. For the time being you have to ignore this warning.
+
+    When using JDK 16 the following error is thrown:
+
+    ```
+    Exception in thread "main" java.lang.ExceptionInInitializerError
+      at com.trivadis.tvdcc.CodeChecker.validateFiles(CodeChecker.java:225)
+      at com.trivadis.tvdcc.CodeChecker.doCodeCheck(CodeChecker.java:150)
+      at com.trivadis.tvdcc.CodeChecker.mainFunction(CodeChecker.java:64)
+      at com.trivadis.tvdcc.CodeChecker.main(CodeChecker.java:43)
+    Caused by: com.google.inject.internal.util.$ComputationException: com.google.inject.internal.util.$ComputationException: java.lang.ExceptionInInitializerError
+    ```
+
+    To fix the issue you have to add the JVM argument `--illegal-access=warn` in the `tvdcc.sh` and `tvdcc.cmd`. This will show a warning as in earlier JDK versions.
 
 ## Usage
 
