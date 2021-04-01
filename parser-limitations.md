@@ -1,10 +1,10 @@
 # Parser Limitations
 
-These document covers the known limitations of parsing SQL*Plus, SQL and PL/SQL code in PL/SQL Cop command line, PL/SQL Cop for SQL Developer and PL/SQL Analyzer.
+These document covers the known limitations of parsing SQL*Plus, SQL and PL/SQL code in db\* CODECOP command line, db\* CODECOP for SQL Developer and PL/SQL Analyzer.
 
 ## Maxim
 
-If your SQL*Plus script runs successfully against an Oracle database but PL/SQL Cop or PL/SQL Analyzer reports an error, this is usually considered a bug. However, there are some known exceptions to this basic principle, which are documented below.
+If your SQL*Plus script runs successfully against an Oracle database but db\* CODECOP or PL/SQL Analyzer reports an error, this is usually considered a bug. However, there are some known exceptions to this basic principle, which are documented below.
 
 ## SQL\*Plus Parser
 
@@ -79,7 +79,7 @@ Oracle is quite gracious in that area and therefore we strive to support more an
 
 `CROSS`, `CURSOR`, `END`, `EXCLUDE`, `FULL`, `FUNCTION`, `INSTANTIABLE`, `INNER`, `JOIN`, `LEFT`, `MODEL`, `OFFSET`, `OUTER`, `RIGHT`, `ROWTYPE`, `TYPE`.
 
-Query the dictionary view `V$RESERVED_WORDS` for a list of keywords. Please note that a parsing error caused by using a keyword as an unquoted identifier is not considered a PL/SQL COP bug, regardless of the keyword categorization by columns such as `RESERVED`.
+Query the dictionary view `V$RESERVED_WORDS` for a list of keywords. Please note that a parsing error caused by using a keyword as an unquoted identifier is not considered a db\* CODECOP bug, regardless of the keyword categorization by columns such as `RESERVED`.
 
 ## Quote Delimiter Characters
 
@@ -97,7 +97,7 @@ All other quote characters lead to parse errors.
 
 ## Conditional Compilation
 
-Up until PL/SQL Cop version 1.0.16, PL/SQL Cop for SQL Developer 1.0.12, PL/SQL Analyzer 1.0.7 conditional compilation blocks have been fully analysed in the PL/SQL body, but were not supported in the PL/SQL DECLARE section.
+Up until db\* CODECOP version 1.0.16, db\* CODECOP for SQL Developer 1.0.12, PL/SQL Analyzer 1.0.7 conditional compilation blocks have been fully analysed in the PL/SQL body, but were not supported in the PL/SQL DECLARE section.
 
 Since it is possible to store non-PL/SQL code within conditional compilation blocks, e.g. generation templates as used in FTLDB or tePSQL, the full-fletched analysis support of directive `IF` statements has been dropped. The `$IF … $END` and the `$ERROR … $END` code blocks are still recognised as statements/expressions including conditions, but the rest of the code is just parsed as a series of tokens. As a side effect, metrics such as the number of statements might change.
 
@@ -286,7 +286,7 @@ Please note that the supported statement provides the access parameters as a str
 
 ## PL/SQL Source Text Wrapping
 
-Since PL/SQL Cop and PL/SQL Analyzer do not include a PL/SQL unwrap utility, the use of wrapped PL/SQL code is not supported.
+Since db\* CODECOP and PL/SQL Analyzer do not include a PL/SQL unwrap utility, the use of wrapped PL/SQL code is not supported.
 
 ## Supported Oracle Versions
 

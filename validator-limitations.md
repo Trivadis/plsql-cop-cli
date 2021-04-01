@@ -6,11 +6,11 @@ These document covers the known limitations of the `com.trivadis.tvdcc.validator
 
 ### File Scope
 
-PL/SQL Cop loads a single file into an Eclipse Ecore model and validates it. After the validation the model is cleared and the next file is processed. This allows to process a large amount of files. Hence the scope of a validator check cannot be more than a single file.
+db\* CODECOP loads a single file into an Eclipse Ecore model and validates it. After the validation the model is cleared and the next file is processed. This allows to process a large amount of files. Hence the scope of a validator check cannot be more than a single file.
 
 ### Oracle Data Dictionary Access
 
-Accessing data dictionary views would allow to extend the scope of validations. However, PL/SQL Cop does not provide features to work with a `DataSource` or a `Connection`. Hence the provided validators are based on files only.
+Accessing data dictionary views would allow to extend the scope of validations. However, db\* CODECOP does not provide features to work with a `DataSource` or a `Connection`. Hence the provided validators are based on files only.
 
 ## Guidelines
 
@@ -63,9 +63,9 @@ This guideline was introduced in v4.0 and the check is not yet implemented.
 
 How are values with dual meaning identified?
 
-When you are using only `Y` and `N` values for a PL/SQL variable, PL/SQL Cop reports a violation of G-2410. 
+When you are using only `Y` and `N` values for a PL/SQL variable, db\* CODECOP reports a violation of G-2410. 
 
-But if you are using other values such as `Da` and `Net`, you do not get such a message. The validator tries to minimize the number of false positives, which results sometimes in false negatives. Consider a variable containing a value for sex. Valid values are `male` and `female`. Even if this is a variable with dual meaning you do not want to represent the sex variable as a boolean type. So PL/SQL Cop checks if exactly two of the following values are stored in a variable: 
+But if you are using other values such as `Da` and `Net`, you do not get such a message. The validator tries to minimize the number of false positives, which results sometimes in false negatives. Consider a variable containing a value for sex. Valid values are `male` and `female`. Even if this is a variable with dual meaning you do not want to represent the sex variable as a boolean type. So db\* CODECOP checks if exactly two of the following values are stored in a variable: 
 
 `TRUE`, `FALSE`, `T`, `F`, `0`, `1`, `2`, `YES`, `NO`, `Y`, `N`, `JA`, `NEIN`, `J`, `SI`, `S`, `OUI`, `NON`, `O`, `L_TRUE`, `L_FALSE`, `CO_TRUE`, `CO_FALSE`.
 
