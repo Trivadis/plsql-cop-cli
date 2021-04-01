@@ -30,7 +30,7 @@ These [HTML](https://trivadis.github.io/plsql-cop-cli/tvdcc_report.html) and [Ex
 
 ## Custom Guidelines as db\* CODECOP Plugins
 
-Since version 2.0 db\* CODECOP supports custom validators. Such a validator must implement the PLSQLCopValidator Java interface and has to be a direct or indirect descendant of the PLSQLJavaValidator class. To simplify the development of a validator an example is provided as Maven project in a dedicated [GitHub repository](https://github.com/Trivadis/cop-validators). This example validator implements 15 guidelines to cover the [chapter 2.2 Naming Conventions of the Trivadis PL/SQL & SQL Coding Guidelines](https://trivadis.github.io/plsql-and-sql-coding-guidelines/2-naming-conventions/naming-conventions/). The following screenshot shows how checks are implemented.
+db\* CODECOP supports custom validators. Such a validator must implement the PLSQLCopValidator Java interface and has to be a direct or indirect descendant of the PLSQLValidator class. To simplify the development of a validator an example is provided as Maven project in a dedicated [GitHub repository](https://github.com/Trivadis/cop-validators). This example validator implements 15 guidelines to cover the [chapter 2.2 Naming Conventions of the Trivadis PL/SQL & SQL Coding Guidelines](https://trivadis.github.io/plsql-and-sql-coding-guidelines/2-naming-conventions/naming-conventions/). The following screenshot shows how checks are implemented.
 
 ![File Issues](images/plsqlcop_custom_validator.png)
 
@@ -120,7 +120,7 @@ options:
   nosonar=false          ignore "-- NOSONAR" marker comments (do not suppress warnings)
   license=<name>         name incl. path to license file, default tvdcc.lic in the root folder
   propertyfile=<name>    load properties from file, e.g. ./tvdcc.properties
-  validator=<name>       decendent of PLSQLJavaValidator and implements PLSQLCopValidator interface, 
+  validator=<name>       decendent of PLSQLValidator and implements PLSQLCopValidator interface, 
                          default is com.trivadis.tvdcc.validators.TrivadisGuidelines3
   genmodel={true|false}  generate SonarQube XML model files, default is false.
 ```
