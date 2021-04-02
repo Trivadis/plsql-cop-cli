@@ -212,7 +212,7 @@ insert into deptsal (dept_no, dept_name, salary)
 
 The `obpaque_format_spec` clause has to be provided as a string literal or as a subquery returning a CLOB. Embedding the driver specific parameters directly is not supported. 
 
-Here are examples of a supported and an unsupported statement. These examples are based on [Tim Hall's article "Inline External Teables in Oracle Database 18c"](https://oracle-base.com/articles/18c/inline-external-tables-18c).
+Here are examples of a supported and an unsupported statement. These examples are based on [Tim Hall's article "Inline External Tables in Oracle Database 18c"](https://oracle-base.com/articles/18c/inline-external-tables-18c).
 
 Supported example:
 
