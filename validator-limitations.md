@@ -19,18 +19,17 @@ Accessing data dictionary views would allow to extend the scope of validations. 
 This guideline is checked for CreateFunction, CreatePackageBody, CreateProcedure, CreateTrigger, CreateTypeBody and PlsqlUnit with a simplified scope. Variable declarations and usages are identified by name. The real PL/SQL scope is not honored. This might lead to false negatives. Here's an example:
 
 ```sql
-CREATE OR REPLACE PROCEDURE p IS
-   l_var INTEGER;     -- used
-BEGIN
+create or replace procedure p is
+   l_var integer;     -- used
+begin
    <<myblock>>
-   DECLARE
-      l_var INTEGER;  -- not used
-   BEGIN
+   declare
+      l_var integer;  -- not used
+   begin
       p.l_var := 1;
-   END myblock;
+   end myblock;
    sys.dbms_output.put_line('l_var: ' || l_var);
-END p;
-/
+end p;
 ```
 
 The `l_var` variable defined within the `myblock` is never used. It's a violation of G-1030. However, a G-2170 (never overload variables) violation is thrown in this case.
@@ -74,21 +73,20 @@ If other values are detected, no violation of G-2410 is reported.
 This guideline is checked for CreateFunction, CreatePackageBody, CreateProcedure, CreateTrigger, CreateTypeBody and PlsqlUnit with a simplified scope. Variable declarations and usages are identified by name. The real PL/SQL scope is not honored. This might lead to false negatives. Here's an example:
 
 ```sql
-CREATE PACKAGE BODY pkg IS
-   PROCEDURE p1 IS
-      l_var INTEGER;
-   BEGIN
+create package body pkg is
+   procedure p1 is
+      l_var integer;
+   begin
       l_var  := 1;
       l_var  := 2;
-   END p1;
-   PROCEDURE p2 IS
-      l_var INTEGER;
-   BEGIN
+   end p1;
+   procedure p2 is
+      l_var integer;
+   begin
       l_var  := 0;
       l_var  := 1;
-   END p2;
-END pkg;
-/
+   end p2;
+end pkg;
 ```
 
 In this case for both `l_var` declarations a G-2410 violation should be thrown. Due to the simplified analysis scope three values are found for `l_var` and therefore no violation is thrown.
@@ -160,29 +158,28 @@ This guideline was introduced in v4.0 and the check is not yet implemented.
 This guideline is checked for CreateFunction, CreatePackageBody, CreateProcedure, CreateTrigger, CreateTypeBody and PlsqlUnit with a simplified scope. Variable declarations and usages are identified by name. The real PL/SQL scope is not honored. This might lead to false negatives. Here's an example:
 
 ```sql
-CREATE PACKAGE BODY pkg IS
-   PROCEDURE p1 IS
-      FUNCTION f RETURN NUMBER     -- unused
-         DETERMINISTIC
-      IS
-      BEGIN
-         RETURN 1;
-      END f;
-   BEGIN
-      NULL;
-   END p1;
-   PROCEDURE p2 IS
-      FUNCTION f RETURN NUMBER     -- used
-         DETERMINISTIC
-      IS
-      BEGIN
-         RETURN 1;
-      END f;
-   BEGIN
+create package body pkg is
+   procedure p1 is
+      function f return number     -- unused
+         deterministic
+      is
+      begin
+         return 1;
+      end f;
+   begin
+      null;
+   end p1;
+   procedure p2 is
+      function f return number     -- used
+         deterministic
+      is
+      begin
+         return 1;
+      end f;
+   begin
       sys.dbms_output.put_line(to_char(f()));
-   END p2;
-END pkg;
-/
+   end p2;
+end pkg;
 ```
 
 The first function `f` is not used. However, it is not reported due to the simplified analysis scope. Another function `f` is found in the scope and this function is used. 
@@ -192,21 +189,20 @@ The first function `f` is not used. However, it is not reported due to the simpl
 This guideline is checked for CreateFunction, CreatePackageBody, CreateProcedure, CreateTrigger, CreateTypeBody and PlsqlUnit with a simplified scope. Variable declarations and usages are identified by name. The real PL/SQL scope is not honored. This might lead to false negatives. Here's an example:
 
 ```sql
-CREATE PACKAGE BODY pkg IS
-   PROCEDURE p (
-      in_param IN DATE         -- unused
-   ) IS
-   BEGIN
-      NULL;
-   END p;
-   PROCEDURE p (
-      in_param IN INTEGER      -- used
-   ) IS
-   BEGIN
+create package body pkg is
+   procedure p (
+      in_param in date         -- unused
+   ) is
+   begin
+      null;
+   end p;
+   procedure p (
+      in_param in integer      -- used
+   ) is
+   begin
       sys.dbms_output.put_line(to_char(in_param));
-   END p2;
-END pkg;
-/
+   end p2;
+end pkg;
 ```
 
 In the first procedure `p` the parameter `in_param` is not used. However, it is not reported due to the simplified analysis scope. Another procedure `p` has also a parameter `in_param` that has been used. 

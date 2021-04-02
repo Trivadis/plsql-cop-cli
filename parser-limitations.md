@@ -41,15 +41,15 @@ Validator checks can be implemented only for these statements and their subcompo
 
 ## Block Terminator
 
-Other block terminators than a dot (`.`) are not supported. This means the `SET BLOCKTERMINATOR` command is ignored.
+Other block terminators than a dot (`.`) are not supported. This means the `set blockterminator` command is ignored.
 
 ## Command Separator
 
-Other command separators than semicolon (`;`) are not supported. This means that the `SET CMDSEP` command is ignored.
+Other command separators than semicolon (`;`) are not supported. This means that the `set cmdsep` command is ignored.
 
 ## SQL Terminator
 
-Other SQL terminators than semicolon (`;`) are not supported. This means that the `SET SQLTERMINATOR` command is ignored. Tailing whitespaces after a SQL terminator are not supported.
+Other SQL terminators than semicolon (`;`) are not supported. This means that the `set sqlterminator` command is ignored. Tailing whitespaces after a SQL terminator are not supported.
 
 ## Line Continuation Character
 
@@ -77,9 +77,9 @@ The use of PL/SQL and SQL keywords as unquoted identifiers are generally not sup
 
 Oracle is quite gracious in that area and therefore we strive to support more and more keywords as unquoted identifiers with each release, but the following keywords are causing conflicts in certain parts of the grammar and the use as literals should therefore be avoided: 
 
-`CROSS`, `CURSOR`, `END`, `EXCLUDE`, `FULL`, `FUNCTION`, `INSTANTIABLE`, `INNER`, `JOIN`, `LEFT`, `MODEL`, `OFFSET`, `OUTER`, `RIGHT`, `ROWTYPE`, `TYPE`.
+`cross`, `cursor`, `end`, `exclude`, `full`, `function`, `instantiable`, `inner`, `join`, `left`, `model`, `offset`, `outer`, `right`, `rowtype`, `type`.
 
-Query the dictionary view `V$RESERVED_WORDS` for a list of keywords. Please note that a parsing error caused by using a keyword as an unquoted identifier is not considered a db\* CODECOP bug, regardless of the keyword categorization by columns such as `RESERVED`.
+Query the dictionary view `v$reserved_words` for a list of keywords. Please note that a parsing error caused by using a keyword as an unquoted identifier is not considered a db\* CODECOP bug, regardless of the keyword categorization by columns such as `reserved`.
 
 ## Quote Delimiter Characters
 
@@ -99,67 +99,65 @@ All other quote characters lead to parse errors.
 
 Up until db\* CODECOP version 1.0.16, db\* CODECOP for SQL Developer 1.0.12, PL/SQL Analyzer 1.0.7 conditional compilation blocks have been fully analysed in the PL/SQL body, but were not supported in the PL/SQL DECLARE section.
 
-Since it is possible to store non-PL/SQL code within conditional compilation blocks, e.g. generation templates as used in FTLDB or tePSQL, the full-fletched analysis support of directive `IF` statements has been dropped. The `$IF … $END` and the `$ERROR … $END` code blocks are still recognised as statements/expressions including conditions, but the rest of the code is just parsed as a series of tokens. As a side effect, metrics such as the number of statements might change.
+Since it is possible to store non-PL/SQL code within conditional compilation blocks, e.g. generation templates as used in FTLDB or tePSQL, the full-fletched analysis support of directive `if` statements has been dropped. The `$if … $end` and the `$error … $end` code blocks are still recognised as statements/expressions including conditions, but the rest of the code is just parsed as a series of tokens. As a side effect, metrics such as the number of statements might change.
 
-The current PL/SQL parser supports conditional compilation within the `DECLARE` section as `ITEM_LIST_1` or `ITEM_LIST_2`.
+The current PL/SQL parser supports conditional compilation within the `declare` section as `item_list_1` or `item_list_2`.
 
-Example of a supported directive `IF` in the `DECLARE` section:
+Example of a supported directive `if` in the `declare` section:
 
 ```sql
-CREATE OR REPLACE PACKAGE my_pkg AS 
-   $IF DBMS_DB_VERSION.VERSION < 10 $THEN 
-      SUBTYPE my_real IS NUMBER;
-   $ELSE 
-      SUBTYPE my_real IS BINARY_DOUBLE;
-   $END
+create or replace package my_pkg as 
+   $if dbms_db_version.version < 10 $then 
+      subtype my_real is number;
+   $else 
+      subtype my_real is binary_double;
+   $end
    my_pi my_real;
    my_e my_real;
-END my_pkg;
-/
+end my_pkg;
 ```
 
 Example of an unsupported directive IF in the DECLARE section
 
 ```sql
-CREATE OR REPLACE PACKAGE my_pkg AS 
-   SUBTYPE my_real IS
-      $IF DBMS_DB_VERSION.VERSION < 10 $THEN 
-         NUMBER;
-      $ELSE 
-         BINARY_DOUBLE;
-      $END
+create or replace package my_pkg as
+   subtype my_real is
+      $if dbms_db_version.version < 10 $then  
+         number;
+      $else 
+         binary_double;
+      $end
    my_pi my_real;
    my_e my_real;
-END my_pkg;
-/
+end my_pkg;
 ```
 
 Empty branches are not supported. The following code leads to parse errors:
 
 ```sql
-CREATE OR REPLACE PROCEDURE p IS
-BEGIN
-   NULL;
-   $IF $$something = 1 $THEN
-   $ELSE
+create or replace procedure p is
+begin
+   null;
+   $if $$something = 1 $then
+   $else
       dbms_output.put_line('enabled');
-   $END
-END p;
+   $end
+end p;
 ```
 
 Instead use the following, without empty branches:
 
 ```sql
-CREATE OR REPLACE PROCEDURE p IS
-BEGIN
-   NULL;
-   $IF $$something != 1 $THEN
+create or replace procedure p is
+begin
+   null;
+   $if $$something != 1 $then
       dbms_output.put_line('enabled');
-   $END
-END p;
+   $end
+end p;
 ```
 
-## FOR LOOP Statement
+## `for loop` Statement
 
 The `lower_bound` and `upper_bound` are separated with a `..`. Whitspaces before and after `..` are not required according the PL/SQL grammar. 
 
@@ -172,42 +170,42 @@ However, if the `lower_bound` expression ends on a number, then a one of the fol
 Example of supported `FOR LOOP`:
 
 ```sql
-BEGIN
-   FOR i IN length(l_value)+1 .. 500 LOOP
+begin
+   for i in length(l_value)+1 .. 500 loop
       dbms_output.put_line('supported');
-   END LOOP;
-END;
+   end loop;
+end;
 ```
 
 Example of unsupported `FOR LOOP`:
 
 ```sql
-BEGIN
-   FOR i IN length(l_value)+1..500 LOOP
+begin
+   for i in length(l_value)+1..500 loop
       dbms_output.put_line('unsupported');
-   END LOOP;
-END;
+   end loop;
+end;
 ```
 
 ## Error Logging Clause
-The keyword `log` is supported as table name and table alias. As a side effect `DELETE` and `INSERT` statements with an `error_logging_clause` but without a `where_clause` and without table alias cannot be supported.
+The keyword `log` is supported as table name and table alias. As a side effect `delete` and `insert` statements with an `error_logging_clause` but without a `where_clause` and without table alias cannot be supported.
 
-Example of supported `INSERT` statement with an `error_logging_clause`
+Example of supported `insert` statement with an `error_logging_clause`
 
 ```sql
-INSERT INTO deptsal (dept_no, dept_name, salary)
-     SELECT dept_no, dept_name, salary
-       FROM source_syn s
- LOG ERRORS INTO deptsal_err REJECT LIMIT 10;
+insert into deptsal (dept_no, dept_name, salary)
+     select dept_no, dept_name, salary
+       from source_syn s
+ log errors into deptsal_err reject limit 10;
 ```
 
-Example of unsupported `INSERT` statement with an `error_logging_clause` (`source_syn` has no alias)
+Example of unsupported `insert` statement with an `error_logging_clause` (`source_syn` has no alias)
 
 ```sql
-INSERT INTO deptsal (dept_no, dept_name, salary)
-     SELECT dept_no, dept_name, salary
-       FROM source_syn
- LOG ERRORS INTO deptsal_err REJECT LIMIT 10;
+insert into deptsal (dept_no, dept_name, salary)
+     select dept_no, dept_name, salary
+       from source_syn
+ log errors into deptsal_err reject limit 10;
 ```
 
 ## Access Parameters of Inline External Tables
@@ -219,67 +217,67 @@ Here are examples of a supported and an unsupported statement. These examples ar
 Supported example:
 
 ```sql
-SELECT country_code, COUNT(*) AS amount
-FROM   EXTERNAL (
-         (
-           country_code  VARCHAR2(3),
-           object_id     NUMBER,
-           owner         VARCHAR2(128),
-           object_name   VARCHAR2(128)
-         )
-         TYPE oracle_loader
-         DEFAULT DIRECTORY tmp_dir1
-         ACCESS PARAMETERS (q'[
-           RECORDS DELIMITED BY NEWLINE
-           BADFILE tmp_dir1
-           LOGFILE tmp_dir1:'inline_ext_tab_%a_%p.log'
-           DISCARDFILE tmp_dir1
-           FIELDS CSV WITH EMBEDDED TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
-           MISSING FIELD VALUES ARE NULL (
-             country_code,
-             object_id,
-             owner,
-             object_name 
-           )]'
-        )
-        LOCATION ('gbr1.txt', 'gbr2.txt', 'ire1.txt', 'ire2.txt')
-        REJECT LIMIT UNLIMITED
-      ) sample (99) inline_ext_tab 
-GROUP BY country_code
-ORDER BY 1;
+select country_code, count(*) as amount
+  from external (
+          (
+             country_code  varchar2(3),
+             object_id     number,
+             owner         varchar2(128),
+             object_name   varchar2(128)
+          )
+          type oracle_loader
+          default directory tmp_dir1
+          access parameters (q'[
+             records delimited by newline
+             badfile tmp_dir1
+             logfile tmp_dir1:'inline_ext_tab_%a_%p.log'
+             discardfile tmp_dir1
+             fields csv with embedded terminated by ',' optionally enclosed by '"'
+             missing field values are null (
+                country_code,
+                object_id,
+                owner,
+                object_name 
+             )]'
+          )
+          location ('gbr1.txt', 'gbr2.txt', 'ire1.txt', 'ire2.txt')
+          reject limit unlimited
+       ) sample (99) inline_ext_tab 
+ group by country_code
+ order by 1;
 ```
 
 Unsupported example:
 
 ```sql
-SELECT country_code, COUNT(*) AS amount
-FROM   EXTERNAL (
-         (
-           country_code  VARCHAR2(3),
-           object_id     NUMBER,
-           owner         VARCHAR2(128),
-           object_name   VARCHAR2(128)
-         )
-         TYPE oracle_loader
-         DEFAULT DIRECTORY tmp_dir1
-         ACCESS PARAMETERS (
-           RECORDS DELIMITED BY NEWLINE
-           BADFILE tmp_dir1
-           LOGFILE tmp_dir1:'inline_ext_tab_%a_%p.log'
-           DISCARDFILE tmp_dir1
-           FIELDS CSV WITH EMBEDDED TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
-           MISSING FIELD VALUES ARE NULL (
-             country_code,
-             object_id,
-             owner,
-             object_name 
-           )
-        )
-        LOCATION ('gbr1.txt', 'gbr2.txt', 'ire1.txt', 'ire2.txt')
-        REJECT LIMIT UNLIMITED
-      ) inline_ext_tab
-GROUP BY country_code
-ORDER BY 1;
+select country_code, count(*) as amount
+  from external (
+          (
+             country_code  varchar2(3),
+             object_id     number,
+             owner         varchar2(128),
+             object_name   varchar2(128)
+          )
+          type oracle_loader
+          default directory tmp_dir1
+          access parameters (
+             records delimited by newline
+             badfile tmp_dir1
+             logfile tmp_dir1:'inline_ext_tab_%a_%p.log'
+             discardfile tmp_dir1
+             fields csv with embedded terminated by ',' optionally enclosed by '"'
+             missing field values are null (
+                country_code,
+                object_id,
+                owner,
+                object_name 
+             )
+          )
+          location ('gbr1.txt', 'gbr2.txt', 'ire1.txt', 'ire2.txt')
+          reject limit unlimited
+       ) inline_ext_tab
+ group by country_code
+ order by 1;
 ```
 
 Please note that the supported statement provides the access parameters as a string using `q'[...]'`.
