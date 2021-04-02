@@ -290,10 +290,18 @@ Since db\* CODECOP and PL/SQL Analyzer do not include a PL/SQL unwrap utility, t
 
 ## Supported Oracle Versions
 
-The PL/SQL and SQL grammars from Oracle version 7.0 until version 12.2 are supported. The language is based on the following documentation:
+The PL/SQL and SQL grammars from Oracle version 7.0 until version 21c are supported. 
 
-- [Oracle SQL\*Plus User’s Guide and Reference, 12c Release 2 (12.2)](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/sqpug/index.html), E50028-08, January 2017
-- [Oracle SQL Language Reference, 12c Release 2 (12.2)](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/sqlrf/index.html), E49448-12, January 2017
-- [Oracle PL/SQL Language Reference, 12c Release 2 (12.2)](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/lnpls/index.html), E49633-15, January 2017
+The grammar implementation is based on the following documentation:
+
+- [Oracle® SQLcl, User's Guide, Release 20.4, F37813-01, January 2021](https://docs.oracle.com/en/database/oracle/sql-developer-command-line/20.4/sqcug/)
+- Long Term Release 19c
+    - [SQL\*Plus®, User's Guide and Reference, 19c, E96459-05, July 2020](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqpug/)
+    - [Oracle® Database SQL Language Reference, 19c, E96310-08, February 2021](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/)
+    - [Oracle® Database Database, PL/SQL Language Reference, 19c E96448-03, August 2020](https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/)
+- Innovation Release 21c
+    - [SQL\*Plus®, User's Guide and Reference, 21c, F31846-02, December 2020](https://docs.oracle.com/en/database/oracle/oracle-database/21/sqpug/)
+    - [Oracle® Database, SQL Language Reference, 21c, F31301-02, February 2021](https://docs.oracle.com/en/database/oracle/oracle-database/21/sqlrf/)
+    - [Oracle® Database, Database PL/SQL Language Reference, 21c, F31827-01, November 2020](https://docs.oracle.com/en/database/oracle/oracle-database/21/lnpls/)
 
 Grammar changes and enhancements made in newer versions are not yet covered.
