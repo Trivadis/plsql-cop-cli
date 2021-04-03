@@ -30,7 +30,9 @@ These [HTML](https://trivadis.github.io/plsql-cop-cli/tvdcc_report.html) and [Ex
 
 ## Custom Guidelines as db\* CODECOP Plugins
 
-db\* CODECOP supports custom validators. Such a validator must implement the PLSQLCopValidator Java interface and has to be a direct or indirect descendant of the PLSQLValidator class. To simplify the development of a validator an example is provided as Maven project in a dedicated [GitHub repository](https://github.com/Trivadis/cop-validators). This example validator implements 15 guidelines to cover the [chapter 2.2 Naming Conventions of the Trivadis PL/SQL & SQL Coding Guidelines](https://trivadis.github.io/plsql-and-sql-coding-guidelines/2-naming-conventions/naming-conventions/). The following screenshot shows how checks are implemented.
+db\* CODECOP supports custom validators. Such a validator must implement the `PLSQLCopValidator` Java interface and has to be a direct or indirect descendant of the `PLSQLValidator` class.
+
+To simplify the development of a validator an example is provided as Maven project in a dedicated [GitHub repository](https://github.com/Trivadis/cop-validators). This example validator also implements 15 guidelines to cover the [chapter 2.2 Naming Conventions of the Trivadis PL/SQL & SQL Coding Guidelines](https://trivadis.github.io/plsql-and-sql-coding-guidelines/2-naming-conventions/naming-conventions/). The following screenshot shows how checks are implemented.
 
 ![File Issues](images/plsqlcop_custom_validator.png)
 
@@ -125,7 +127,7 @@ options:
   genmodel={true|false}  generate SonarQube XML model files, default is false.
 ```
 
-Please note that db\* CODECOP applies by default a filter to support the following file extensions: `.sql`, `.prc`, `.fnc`, `.pks`, `.pkb`, `.trg`, `.vw`, `.tps`, `.tbp`, `.plb`, `.pls`, `.rcv`, `.spc`, `.typ`, `.aqt`, `.aqp`, `.ctx`, `.dbl`, `.tab`, `.dim`, `.snp`, `.con`, `.collt`, `.seq`, `.syn`, `.grt`, `.sp`, `.spb`, `.sps`, `.pck`. 
+Please note that db\* CODECOP applies by default a filter to support the following file extensions: `.sql`, `.prc`, `.fnc`, `.pks`, `.pkb`, `.trg`, `.vw`, `.tps`, `.tbp`, `.plb`, `.pls`, `.rcv`, `.spc`, `.typ`, `.aqt`, `.aqp`, `.ctx`, `.dbl`, `.tab`, `.dim`, `.snp`, `.con`, `.collt`, `.seq`, `.syn`, `.grt`, `.sp`, `.spb`, `.sps`, `.pck`. To process other or additional file extensions, you must pass your own filter expression.
 
 The value of all options will be included in the output files and on the console output. 
 
@@ -143,7 +145,7 @@ see [Frequently Ased Questions](FAQ.md).
 
 ## Further Information
 
-Please find further information about db\* CODECOP on the [Trivadis](https://www.trivadis.com/en/plsql-cop) website.
+Please find further information about db\* CODECOP on the [Trivadis](https://www.trivadis.com/en/dbstar) website.
 
 ## License
 
