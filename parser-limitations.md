@@ -91,7 +91,7 @@ nq'[that’s very cool!]'
 
 The following quote characters-pairs are supported: 
 
-`$$`, `##`, `@@`, `££`, `""`, `||`, `()`, `{}`, `[]`, `<>`, `!!`, `++`, `~~`, `//`. 
+`$$`, `##`, `@@`, `££`, `""`, `||`, `()`, `{}`, `[]`, `<>`, `!!`, `++`, `~~`, `//`, `§§`. 
 
 All other quote characters lead to parse errors.
 
