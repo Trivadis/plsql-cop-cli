@@ -10,6 +10,8 @@ If your SQL*Plus script runs successfully against an Oracle database but db\* CO
 
 The SQL\*Plus parser is a so-called shallow parser. It covers the bare minimum to identify SQL\*Plus and SQLcl commands, SQL statements and anonymous PL/SQL blocks. It is designed for basic metric calculation and for collaboration with the PL/SQL parser. It is specifically not designed for code validations.
 
+This parser needs lines without trailing spaces as input. Otherwise, the metrics regarding the number of commands can be wrong and parse errors can occur when the SQL\*Plus parser passes SQL\*Plus commands to the PL/SQL parser. We could remove trailing spaces before parsing, but this could lead to positional differences in the file or editor when reporting validation issues. Therefore, we strongly recommend that you ensure that your input does not contain trailing spaces, e.g. by configuring your editors accordingly.
+
 ## PL/SQL Parser
 
 The PL/SQL parser treats SQL and PL/SQL as a single language. The goal is to parse the following statements completely for code validation purposes:
