@@ -10,6 +10,8 @@ If your SQL*Plus script runs successfully against an Oracle database but db\* CO
 
 The SQL\*Plus parser is a so-called shallow parser. It covers the bare minimum to identify SQL\*Plus and SQLcl commands, SQL statements and anonymous PL/SQL blocks. It is designed for basic metric calculation and for collaboration with the PL/SQL parser. It is specifically not designed for code validations.
 
+This parser needs lines without trailing spaces as input. Otherwise, the metrics regarding the number of commands can be wrong and parse errors can occur when the SQL\*Plus parser passes SQL\*Plus commands to the PL/SQL parser. We could remove trailing spaces before parsing, but this could lead to positional differences in the file or editor when reporting validation issues. Therefore, we strongly recommend that you ensure that your input does not contain trailing spaces, e.g. by configuring your editors accordingly.
+
 ## PL/SQL Parser
 
 The PL/SQL parser treats SQL and PL/SQL as a single language. The goal is to parse the following statements completely for code validation purposes:
@@ -75,11 +77,19 @@ The prompt must not contain unterminated single (`'`) or double quotes (`"`).
 
 The use of PL/SQL and SQL keywords as unquoted identifiers are generally not supported, due to the fact, that every single keyword needs to be treated as an exception. 
 
-Oracle is quite gracious in that area and therefore we strive to support more and more keywords as unquoted identifiers with each release, but the following keywords are causing conflicts in certain parts of the grammar and the use as literals should therefore be avoided: 
+Oracle is quite liberal in this area. We try to support existing keywords and keywords introduced in new Oracle database versions as identifiers as long as they do not cause conflicts in our grammar.
 
-`cross`, `cursor`, `end`, `exclude`, `full`, `function`, `instantiable`, `inner`, `join`, `left`, `model`, `offset`, `outer`, `right`, `rowtype`, `type`.
+For example, the following keywords cannot be used unquoted as table alias since the are conflicting with the SQL grammar:
 
-Query the dictionary view `v$reserved_words` for a list of keywords. Please note that a parsing error caused by using a keyword as an unquoted identifier is not considered a db\* CODECOP bug, regardless of the keyword categorization by columns such as `reserved`.
+`cross`, `full`, `inner`, `join`, `json`, `left`, `model`, `natural`, `offset`, `outer`, `right`.
+
+Beginning with version 4.1 function names with non-standard parameters are not supported as unquoted identifiers anymore. Standard parameters follow the notation defined in the [Database PL/SQL Language Reference](https://docs.oracle.com/en/database/oracle/oracle-database/21/lnpls/plsql-subprograms.html#GUID-A5DA8CF5-1BCC-4ABE-9B68-DB593FF1D2CC). Examples are [`add_months`](https://docs.oracle.com/en/database/oracle/oracle-database/21/sqlrf/ADD_MONTHS.html#GUID-B8C74443-DF32-4B7C-857F-28D557381543), [`greatest`](https://docs.oracle.com/en/database/oracle/oracle-database/21/sqlrf/GREATEST.html#GUID-06B88B22-8466-44B6-93C7-50B222122ECE) or [`instr`](https://docs.oracle.com/en/database/oracle/oracle-database/21/sqlrf/INSTR.html#GUID-47E3A7C4-ED72-458D-A1FA-25A9AD3BE113).
+
+The following functions use non-standard parameters and therefore cannot be used as unquoted identifiers:
+
+`cast`, `collect`, `feature_compare`, `json_array`, `json_arrayagg`, `json_mergepatch`, `json_object`, `json_objectagg`, `json_query`, `json_scalar`, `json_serialize`, `json_transform`, `json_value`, `listagg`, `to_binary_double`, `to_binary_float`, `to_date`, `to_dsinterval`, `to_number`, `to_timestamp`, `to_timestamp_tz`, `to_yminterval`, `treat`, `validate_conversion`, `xmlagg`, `xmlcast`, `xmlcolattval`, `xmlelement`, `xmlparse`, `xmlpi`.
+
+You can query the dictionary view `v$reserved_words` for a complete list of keywords. Please note that a parsing error caused by using a keyword as an unquoted identifier is not considered a db\* CODECOP bug, regardless of the keyword categorization by columns such as `reserved`.
 
 ## Quote Delimiter Characters
 
@@ -286,13 +296,17 @@ Please note that the supported statement provides the access parameters as a str
 
 Since db\* CODECOP and PL/SQL Analyzer do not include a PL/SQL unwrap utility, the use of wrapped PL/SQL code is not supported.
 
+## SQL\*Plus Substitution Variables
+
+...
+
 ## Supported Oracle Versions
 
 The PL/SQL and SQL grammars from Oracle version 7.0 until version 21c are supported. 
 
 The grammar implementation is based on the following documentation:
 
-- [Oracle® SQLcl, User's Guide, Release 20.4, F37813-01, January 2021](https://docs.oracle.com/en/database/oracle/sql-developer-command-line/20.4/sqcug/)
+- [Oracle® SQLcl, User's Guide, Release 21.1, F40621-01, April 2021](https://docs.oracle.com/en/database/oracle/sql-developer-command-line/21.1/sqcug/)
 - Long Term Release 19c
     - [SQL\*Plus®, User's Guide and Reference, 19c, E96459-05, July 2020](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqpug/)
     - [Oracle® Database SQL Language Reference, 19c, E96310-08, February 2021](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/)
