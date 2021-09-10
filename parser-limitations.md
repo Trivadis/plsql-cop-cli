@@ -298,7 +298,25 @@ Since db\* CODECOP and PL/SQL Analyzer do not include a PL/SQL unwrap utility, t
 
 ## SQL\*Plus Substitution Variables
 
-...
+Substitution variables are supported in the SQL\*Plus grammar. This means they work when used in in SQL\*Plus commands such as `connect`. 
+
+When a substitution variable is used in commands supported by the PL/SQL grammar (e.g. the `SELECT` statement), then it can be processed only when it can be replaced by a SQL expression or a condition. 
+
+Here's an example of a supported use of substitution variables:
+
+```sql
+select &&column_name 
+from emp
+where &&where_condition;
+```
+
+However, the following example is not supported supported and leads to a parse error:
+
+```sql
+select empno, ename 
+from emp
+&after_from_clause;
+```
 
 ## Supported Oracle Versions
 
