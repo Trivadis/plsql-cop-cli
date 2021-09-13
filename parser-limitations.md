@@ -51,15 +51,15 @@ Other command separators than semicolon (`;`) are not supported. This means that
 
 ## SQL Terminator
 
-Other SQL terminators than semicolon (`;`) are not supported. This means that the `set sqlterminator` command is ignored. Tailing whitespaces after a SQL terminator are not supported.
+Other SQL terminators than semicolon (`;`) are not supported. This means that the `set sqlterminator` command is ignored. Tailing whitespace after a SQL terminator are not supported.
 
 ## Line Continuation Character
 
-Tailing whitespaces after a line continuation character (`-`) are not supported.
+Tailing whitespace after a line continuation character (`-`) are not supported.
 
 ## Slash Command
 
-Tailing whitespaces after the slash command (`/`) are not supported.
+Tailing whitespace after the slash command (`/`) are not supported.
 
 ## Execute Command
 
