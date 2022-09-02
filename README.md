@@ -24,7 +24,13 @@ Here are some screen shot taken from an of an HTML report based on the samples p
 ![File Overview](images/plsqlcop_file_overview.png)
 ![File Issues](images/plsqlcop_file_issues.png)
 
-These [HTML](https://trivadis.github.io/plsql-cop-cli/tvdcc_report.html) and [Excel](https://trivadis.github.io/plsql-cop-cli/tvdcc_report.xlsx) reports have been created by db\* CODECOP and are based on a simple set of good and bad example files distributed with db\* CODECOP.
+These reports reports have been created by db\* CODECOP and are based on a simple set of good and bad example files distributed with db\* CODECOP:
+
+Report | Description
+------ | -----------
+[HTML](https://trivadis.github.io/plsql-cop-cli/tvdcc_report.html) | Self-contained HTML report
+[Excel](https://trivadis.github.io/plsql-cop-cli/tvdcc_report.xlsx) | Excel workbook with the same information as in the HTML report. Contains these sheets: Summary, IssuesPivot, PLSQLUnits, Files and Issues.
+[JSON](https://trivadis.github.io/plsql-cop-cli/tvdcc_report.json) | JSON file in [SonarQube's Generic Issue Import Format](https://docs.sonarqube.org/8.9/analysis/generic-issue/). This allows to publish issues in environments where the db\* CODECOP plugin is not available such as [SonarCloud](https://sonarcloud.io/).
 
 ## Custom Guidelines as db\* CODECOP Plugins
 
