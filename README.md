@@ -30,7 +30,7 @@ These [HTML](https://trivadis.github.io/plsql-cop-cli/tvdcc_report.html) and [Ex
 
 db\* CODECOP supports custom validators.
 
-To simplify the development of a validator some examples are provided as Maven project in a dedicated [GitHub repository](https://github.com/Trivadis/cop-validators). One validator implements the checks to cover the [chapter 2.2 Naming Conventions of the Trivadis PL/SQL & SQL Coding Guidelines](https://trivadis.github.io/plsql-and-sql-coding-guidelines/2-naming-conventions/naming-conventions/). The following screenshot shows how checks are implemented.
+To simplify the development of a validator some examples are provided as Maven project in a dedicated [GitHub repository](https://github.com/Trivadis/cop-validators). One validator implements the checks to cover the [Naming Conventions for PL/SQL](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.2/2-naming-conventions/naming-conventions/#naming-conventions-for-plsql). The following screenshot shows how checks are implemented.
 
 ![File Issues](images/plsqlcop_custom_validator.png)
 
