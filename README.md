@@ -106,7 +106,7 @@ options:
   genmodel={true|false}  generate SonarQube XML model files, default is false.
 ```
 
-Please note that db\* CODECOP applies by default a filter to support the following file extensions: `.sql`, `.prc`, `.fnc`, `.pks`, `.pkb`, `.trg`, `.vw`, `.tps`, `.tbp`, `.plb`, `.pls`, `.rcv`, `.spc`, `.typ`, `.aqt`, `.aqp`, `.ctx`, `.dbl`, `.tab`, `.dim`, `.snp`, `.con`, `.collt`, `.seq`, `.syn`, `.grt`, `.sp`, `.spb`, `.sps`, `.pck`. To process other or additional file extensions, you must pass your own filter expression.
+Please note that db\* CODECOP applies by default a filter to support the following file extensions: `.sql`, `.prc`, `.fnc`, `.pks`, `.pkb`, `.trg`, `.vw`, `.tps`, `.tpb`, `.tbp`, `.plb`, `.pls`, `.rcv`, `.spc`, `.typ`, `.aqt`, `.aqp`, `.ctx`, `.dbl`, `.tab`, `.dim`, `.snp`, `.con`, `.collt`, `.seq`, `.syn`, `.grt`, `.sp`, `.spb`, `.sps`, `.pck`, `.md`, `.mdown`. To process other or additional file extensions, you must pass your own filter expression.
 
 The value of all options will be included in the output files and on the console output. 
 
