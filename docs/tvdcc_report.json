@@ -1,0 +1,5070 @@
+{
+  "issues": [
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2140",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2140: Never initialize variables with NULL.",
+        "filePath": "sample/guidelines/guideline_0000_00.sql",
+        "textRange": {
+          "startLine": 16,
+          "endLine": 16,
+          "startColumn": 23,
+          "endColumn": 30
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-1010",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-1010: Try to label your sub blocks.",
+        "filePath": "sample/guidelines/guideline_1010_01.sql",
+        "textRange": {
+          "startLine": 8,
+          "endLine": 10,
+          "startColumn": 3,
+          "endColumn": 6
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-1010",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-1010: Try to label your sub blocks.",
+        "filePath": "sample/guidelines/guideline_1010_01.sql",
+        "textRange": {
+          "startLine": 12,
+          "endLine": 14,
+          "startColumn": 3,
+          "endColumn": 6
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-1020",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-1020: Always have a matching loop or block label.",
+        "filePath": "sample/guidelines/guideline_1020_02.sql",
+        "textRange": {
+          "startLine": 17,
+          "endLine": 17,
+          "startColumn": 3,
+          "endColumn": 19
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-1020",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-1020: Always have a matching loop or block label.",
+        "filePath": "sample/guidelines/guideline_1020_02.sql",
+        "textRange": {
+          "startLine": 22,
+          "endLine": 22,
+          "startColumn": 3,
+          "endColumn": 19
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-1020",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-1020: Always have a matching loop or block label.",
+        "filePath": "sample/guidelines/guideline_1020_02.sql",
+        "textRange": {
+          "startLine": 28,
+          "endLine": 28,
+          "startColumn": 3,
+          "endColumn": 17
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-1020",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-1020: Always have a matching loop or block label.",
+        "filePath": "sample/guidelines/guideline_1020_02.sql",
+        "textRange": {
+          "startLine": 34,
+          "endLine": 34,
+          "startColumn": 3,
+          "endColumn": 17
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4365",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4365: Never use unconditional CONTINUE or EXIT in a loop.",
+        "filePath": "sample/guidelines/guideline_1020_02.sql",
+        "textRange": {
+          "startLine": 36,
+          "endLine": 36,
+          "startColumn": 6,
+          "endColumn": 21
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-1020",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-1020: Always have a matching loop or block label.",
+        "filePath": "sample/guidelines/guideline_1020_02.sql",
+        "textRange": {
+          "startLine": 39,
+          "endLine": 39,
+          "startColumn": 3,
+          "endColumn": 15
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4365",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4365: Never use unconditional CONTINUE or EXIT in a loop.",
+        "filePath": "sample/guidelines/guideline_1020_02.sql",
+        "textRange": {
+          "startLine": 73,
+          "endLine": 73,
+          "startColumn": 6,
+          "endColumn": 21
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-1030",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-1030: Avoid defining variables that are not used.",
+        "filePath": "sample/guidelines/guideline_1030_03.sql",
+        "textRange": {
+          "startLine": 10,
+          "endLine": 10,
+          "startColumn": 6,
+          "endColumn": 18
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-1030",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-1030: Avoid defining variables that are not used.",
+        "filePath": "sample/guidelines/guideline_1030_03.sql",
+        "textRange": {
+          "startLine": 12,
+          "endLine": 12,
+          "startColumn": 6,
+          "endColumn": 12
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-1040",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-1040: Avoid dead code.",
+        "filePath": "sample/guidelines/guideline_1040_04.sql",
+        "textRange": {
+          "startLine": 11,
+          "endLine": 11,
+          "startColumn": 6,
+          "endColumn": 11
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4365",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4365: Never use unconditional CONTINUE or EXIT in a loop.",
+        "filePath": "sample/guidelines/guideline_1040_04.sql",
+        "textRange": {
+          "startLine": 19,
+          "endLine": 19,
+          "startColumn": 6,
+          "endColumn": 18
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-1040",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-1040: Avoid dead code.",
+        "filePath": "sample/guidelines/guideline_1040_04.sql",
+        "textRange": {
+          "startLine": 19,
+          "endLine": 19,
+          "startColumn": 6,
+          "endColumn": 18
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-1040",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-1040: Avoid dead code.",
+        "filePath": "sample/guidelines/guideline_1040_04.sql",
+        "textRange": {
+          "startLine": 26,
+          "endLine": 26,
+          "startColumn": 21,
+          "endColumn": 30
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-1040",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-1040: Avoid dead code.",
+        "filePath": "sample/guidelines/guideline_1040_04.sql",
+        "textRange": {
+          "startLine": 38,
+          "endLine": 38,
+          "startColumn": 13,
+          "endColumn": 18
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-1040",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-1040: Avoid dead code.",
+        "filePath": "sample/guidelines/guideline_1040_04.sql",
+        "textRange": {
+          "startLine": 45,
+          "endLine": 45,
+          "startColumn": 3,
+          "endColumn": 9
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-1060",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-1060: Avoid storing ROWIDs or UROWIDs in database tables.",
+        "filePath": "sample/guidelines/guideline_1060_06.sql",
+        "textRange": {
+          "startLine": 21,
+          "endLine": 21,
+          "startColumn": 10,
+          "endColumn": 15
+        }
+      },
+      "effortMinutes": 60
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-1070",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-1070: Avoid nesting comment blocks.",
+        "filePath": "sample/guidelines/guideline_1070_07.sql",
+        "textRange": {
+          "startLine": 9,
+          "endLine": 9,
+          "startColumn": 3,
+          "endColumn": 42
+        }
+      },
+      "effortMinutes": 5
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-1070",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-1070: Avoid nesting comment blocks.",
+        "filePath": "sample/guidelines/guideline_1070_07.sql",
+        "textRange": {
+          "startLine": 11,
+          "endLine": 12,
+          "startColumn": 3,
+          "endColumn": 0
+        }
+      },
+      "effortMinutes": 5
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-1080",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-1080: Avoid using the same expression on both sides of a relational comparison operator or a logical operator.",
+        "filePath": "sample/guidelines/guideline_1080_na.sql",
+        "textRange": {
+          "startLine": 16,
+          "endLine": 17,
+          "startColumn": 7,
+          "endColumn": 24
+        }
+      },
+      "effortMinutes": 5
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2110",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2110: Try to use anchored declarations for variables, constants and types.",
+        "filePath": "sample/guidelines/guideline_2110_08.sql",
+        "textRange": {
+          "startLine": 11,
+          "endLine": 11,
+          "startColumn": 6,
+          "endColumn": 37
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2120",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2120: Try to have a single location to define your types.",
+        "filePath": "sample/guidelines/guideline_2120_09.sql",
+        "textRange": {
+          "startLine": 12,
+          "endLine": 12,
+          "startColumn": 6,
+          "endColumn": 53
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2135",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2135: Avoid assigning values to local variables that are not used by a subsequent statement.",
+        "filePath": "sample/guidelines/guideline_2135_na.sql",
+        "textRange": {
+          "startLine": 19,
+          "endLine": 19,
+          "startColumn": 6,
+          "endColumn": 43
+        }
+      },
+      "effortMinutes": 5
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2140",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2140: Never initialize variables with NULL.",
+        "filePath": "sample/guidelines/guideline_2140_11.sql",
+        "textRange": {
+          "startLine": 8,
+          "endLine": 8,
+          "startColumn": 26,
+          "endColumn": 33
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2135",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2135: Avoid assigning values to local variables that are not used by a subsequent statement.",
+        "filePath": "sample/guidelines/guideline_2145_na.sql",
+        "textRange": {
+          "startLine": 12,
+          "endLine": 12,
+          "startColumn": 3,
+          "endColumn": 65
+        }
+      },
+      "effortMinutes": 5
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2145",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2145: Never self-assign a variable.",
+        "filePath": "sample/guidelines/guideline_2145_na.sql",
+        "textRange": {
+          "startLine": 13,
+          "endLine": 13,
+          "startColumn": 3,
+          "endColumn": 41
+        }
+      },
+      "effortMinutes": 5
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2150",
+      "severity": "BLOCKER",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2150: Avoid comparisons with NULL value, consider using IS [NOT] NULL.",
+        "filePath": "sample/guidelines/guideline_2150_12.sql",
+        "textRange": {
+          "startLine": 12,
+          "endLine": 12,
+          "startColumn": 6,
+          "endColumn": 20
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2160",
+      "severity": "CRITICAL",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2160: Avoid initializing variables using functions in the declaration section.",
+        "filePath": "sample/guidelines/guideline_2160_13.sql",
+        "textRange": {
+          "startLine": 9,
+          "endLine": 10,
+          "startColumn": 54,
+          "endColumn": 58
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2170",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2170: Never overload variables.",
+        "filePath": "sample/guidelines/guideline_2170_14.sql",
+        "textRange": {
+          "startLine": 17,
+          "endLine": 17,
+          "startColumn": 9,
+          "endColumn": 19
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2135",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2135: Avoid assigning values to local variables that are not used by a subsequent statement.",
+        "filePath": "sample/guidelines/guideline_2180_15.sql",
+        "textRange": {
+          "startLine": 12,
+          "endLine": 12,
+          "startColumn": 3,
+          "endColumn": 30
+        }
+      },
+      "effortMinutes": 5
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2180",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2180: Never use quoted identifiers.",
+        "filePath": "sample/guidelines/guideline_2180_15.sql",
+        "textRange": {
+          "startLine": 8,
+          "endLine": 8,
+          "startColumn": 3,
+          "endColumn": 13
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2180",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2180: Never use quoted identifiers.",
+        "filePath": "sample/guidelines/guideline_2180_15.sql",
+        "textRange": {
+          "startLine": 9,
+          "endLine": 9,
+          "startColumn": 3,
+          "endColumn": 16
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2180",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2180: Never use quoted identifiers.",
+        "filePath": "sample/guidelines/guideline_2180_15.sql",
+        "textRange": {
+          "startLine": 10,
+          "endLine": 10,
+          "startColumn": 3,
+          "endColumn": 17
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2135",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2135: Avoid assigning values to local variables that are not used by a subsequent statement.",
+        "filePath": "sample/guidelines/guideline_2180_15.sql",
+        "textRange": {
+          "startLine": 25,
+          "endLine": 25,
+          "startColumn": 3,
+          "endColumn": 31
+        }
+      },
+      "effortMinutes": 5
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2135",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2135: Avoid assigning values to local variables that are not used by a subsequent statement.",
+        "filePath": "sample/guidelines/guideline_2185_16.sql",
+        "textRange": {
+          "startLine": 14,
+          "endLine": 14,
+          "startColumn": 3,
+          "endColumn": 9
+        }
+      },
+      "effortMinutes": 5
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2185",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2185: Avoid using overly short names for explicitly or implicitly declared identifiers.",
+        "filePath": "sample/guidelines/guideline_2185_16.sql",
+        "textRange": {
+          "startLine": 10,
+          "endLine": 10,
+          "startColumn": 3,
+          "endColumn": 4
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2185",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2185: Avoid using overly short names for explicitly or implicitly declared identifiers.",
+        "filePath": "sample/guidelines/guideline_2185_16.sql",
+        "textRange": {
+          "startLine": 11,
+          "endLine": 11,
+          "startColumn": 3,
+          "endColumn": 4
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2185",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2185: Avoid using overly short names for explicitly or implicitly declared identifiers.",
+        "filePath": "sample/guidelines/guideline_2185_16.sql",
+        "textRange": {
+          "startLine": 12,
+          "endLine": 12,
+          "startColumn": 3,
+          "endColumn": 4
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2135",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2135: Avoid assigning values to local variables that are not used by a subsequent statement.",
+        "filePath": "sample/guidelines/guideline_2185_16.sql",
+        "textRange": {
+          "startLine": 27,
+          "endLine": 27,
+          "startColumn": 3,
+          "endColumn": 31
+        }
+      },
+      "effortMinutes": 5
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2190",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2190: Avoid using ROWID or UROWID.",
+        "filePath": "sample/guidelines/guideline_2190_17.sql",
+        "textRange": {
+          "startLine": 18,
+          "endLine": 18,
+          "startColumn": 10,
+          "endColumn": 15
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2210",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2210: Avoid declaring NUMBER variables, constants or subtypes with no precision.",
+        "filePath": "sample/guidelines/guideline_2210_18.sql",
+        "textRange": {
+          "startLine": 10,
+          "endLine": 10,
+          "startColumn": 30,
+          "endColumn": 36
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2230",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2230: Try to use SIMPLE_INTEGER datatype when appropriate.",
+        "filePath": "sample/guidelines/guideline_2220_19.sql",
+        "textRange": {
+          "startLine": 14,
+          "endLine": 14,
+          "startColumn": 28,
+          "endColumn": 39
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2220",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2220: Try to use PLS_INTEGER instead of NUMBER for arithmetic operations with integer values.",
+        "filePath": "sample/guidelines/guideline_2220_19.sql",
+        "textRange": {
+          "startLine": 14,
+          "endLine": 14,
+          "startColumn": 28,
+          "endColumn": 39
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2230",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2230: Try to use SIMPLE_INTEGER datatype when appropriate.",
+        "filePath": "sample/guidelines/guideline_2230_na.sql",
+        "textRange": {
+          "startLine": 20,
+          "endLine": 20,
+          "startColumn": 28,
+          "endColumn": 39
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2220",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2220: Try to use PLS_INTEGER instead of NUMBER for arithmetic operations with integer values.",
+        "filePath": "sample/guidelines/guideline_2230_na.sql",
+        "textRange": {
+          "startLine": 20,
+          "endLine": 20,
+          "startColumn": 28,
+          "endColumn": 39
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2310",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2310: Avoid using CHAR data type.",
+        "filePath": "sample/guidelines/guideline_2310_20.sql",
+        "textRange": {
+          "startLine": 11,
+          "endLine": 11,
+          "startColumn": 31,
+          "endColumn": 40
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2320",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2320: Never use VARCHAR data type.",
+        "filePath": "sample/guidelines/guideline_2320_21.sql",
+        "textRange": {
+          "startLine": 11,
+          "endLine": 11,
+          "startColumn": 31,
+          "endColumn": 43
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2340",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2340: Always define your VARCHAR2 variables using CHAR SEMANTIC (if not defined anchored).",
+        "filePath": "sample/guidelines/guideline_2330_22.sql",
+        "textRange": {
+          "startLine": 9,
+          "endLine": 9,
+          "startColumn": 27,
+          "endColumn": 38
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2330",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2330: Never use zero-length strings to substitute NULL.",
+        "filePath": "sample/guidelines/guideline_2330_22.sql",
+        "textRange": {
+          "startLine": 9,
+          "endLine": 9,
+          "startColumn": 42,
+          "endColumn": 44
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2340",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2340: Always define your VARCHAR2 variables using CHAR SEMANTIC (if not defined anchored).",
+        "filePath": "sample/guidelines/guideline_2340_23.sql",
+        "textRange": {
+          "startLine": 11,
+          "endLine": 11,
+          "startColumn": 31,
+          "endColumn": 44
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2410",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2410: Try to use boolean data type for values with dual meaning. (co_numeric_false, co_numeric_true).",
+        "filePath": "sample/guidelines/guideline_2410_24.sql",
+        "textRange": {
+          "startLine": 11,
+          "endLine": 11,
+          "startColumn": 3,
+          "endColumn": 26
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2135",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2135: Avoid assigning values to local variables that are not used by a subsequent statement.",
+        "filePath": "sample/guidelines/guideline_2410_24.sql",
+        "textRange": {
+          "startLine": 14,
+          "endLine": 14,
+          "startColumn": 6,
+          "endColumn": 46
+        }
+      },
+      "effortMinutes": 5
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2135",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2135: Avoid assigning values to local variables that are not used by a subsequent statement.",
+        "filePath": "sample/guidelines/guideline_2410_24.sql",
+        "textRange": {
+          "startLine": 28,
+          "endLine": 28,
+          "startColumn": 6,
+          "endColumn": 22
+        }
+      },
+      "effortMinutes": 5
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2135",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2135: Avoid assigning values to local variables that are not used by a subsequent statement.",
+        "filePath": "sample/guidelines/guideline_2410_24.sql",
+        "textRange": {
+          "startLine": 41,
+          "endLine": 41,
+          "startColumn": 3,
+          "endColumn": 49
+        }
+      },
+      "effortMinutes": 5
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7230",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7230: Avoid declaring global variables public.",
+        "filePath": "sample/guidelines/guideline_2510_25.sql",
+        "textRange": {
+          "startLine": 10,
+          "endLine": 10,
+          "startColumn": 3,
+          "endColumn": 9
+        }
+      },
+      "effortMinutes": 11
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7230",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7230: Avoid declaring global variables public.",
+        "filePath": "sample/guidelines/guideline_2510_25.sql",
+        "textRange": {
+          "startLine": 11,
+          "endLine": 11,
+          "startColumn": 3,
+          "endColumn": 8
+        }
+      },
+      "effortMinutes": 11
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2510",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2510: Avoid using the LONG and LONG RAW data types.",
+        "filePath": "sample/guidelines/guideline_2510_25.sql",
+        "textRange": {
+          "startLine": 10,
+          "endLine": 10,
+          "startColumn": 10,
+          "endColumn": 14
+        }
+      },
+      "effortMinutes": 17
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2510",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2510: Avoid using the LONG and LONG RAW data types.",
+        "filePath": "sample/guidelines/guideline_2510_25.sql",
+        "textRange": {
+          "startLine": 11,
+          "endLine": 11,
+          "startColumn": 9,
+          "endColumn": 17
+        }
+      },
+      "effortMinutes": 17
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-1030",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-1030: Avoid defining variables that are not used.",
+        "filePath": "sample/guidelines/guideline_2510_25.sql",
+        "textRange": {
+          "startLine": 32,
+          "endLine": 32,
+          "startColumn": 3,
+          "endColumn": 9
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-1030",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-1030: Avoid defining variables that are not used.",
+        "filePath": "sample/guidelines/guideline_2510_25.sql",
+        "textRange": {
+          "startLine": 33,
+          "endLine": 33,
+          "startColumn": 3,
+          "endColumn": 8
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2610",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2610: Never use self-defined weak ref cursor types.",
+        "filePath": "sample/guidelines/guideline_2610_na.sql",
+        "textRange": {
+          "startLine": 10,
+          "endLine": 10,
+          "startColumn": 3,
+          "endColumn": 45
+        }
+      },
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-3110",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-3110: Always specify the target columns when coding an insert statement.",
+        "filePath": "sample/guidelines/guideline_3110_26.sql",
+        "textRange": {
+          "startLine": 8,
+          "endLine": 8,
+          "startColumn": 12,
+          "endColumn": 23
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-3115",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-3115: Avoid self-assigning a column.",
+        "filePath": "sample/guidelines/guideline_3115_na.sql",
+        "textRange": {
+          "startLine": 11,
+          "endLine": 11,
+          "startColumn": 7,
+          "endColumn": 30
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-3120",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-3120: Always use table aliases when your SQL statement involves more than one source.",
+        "filePath": "sample/guidelines/guideline_3120_27.sql",
+        "textRange": {
+          "startLine": 9,
+          "endLine": 9,
+          "startColumn": 7,
+          "endColumn": 16
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-3120",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-3120: Always use table aliases when your SQL statement involves more than one source.",
+        "filePath": "sample/guidelines/guideline_3120_27.sql",
+        "textRange": {
+          "startLine": 10,
+          "endLine": 10,
+          "startColumn": 7,
+          "endColumn": 17
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-3120",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-3120: Always use table aliases when your SQL statement involves more than one source.",
+        "filePath": "sample/guidelines/guideline_3120_27.sql",
+        "textRange": {
+          "startLine": 11,
+          "endLine": 11,
+          "startColumn": 7,
+          "endColumn": 22
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-3120",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-3120: Always use table aliases when your SQL statement involves more than one source.",
+        "filePath": "sample/guidelines/guideline_3120_27.sql",
+        "textRange": {
+          "startLine": 24,
+          "endLine": 24,
+          "startColumn": 17,
+          "endColumn": 28
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-3130",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-3130: Try to use ANSI SQL-92 join syntax.",
+        "filePath": "sample/guidelines/guideline_3130_28.sql",
+        "textRange": {
+          "startLine": 12,
+          "endLine": 13,
+          "startColumn": 7,
+          "endColumn": 20
+        }
+      },
+      "effortMinutes": 5
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-3140",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-3140: Try to use anchored records as targets for your cursors.",
+        "filePath": "sample/guidelines/guideline_3140_29.sql",
+        "textRange": {
+          "startLine": 17,
+          "endLine": 17,
+          "startColumn": 21,
+          "endColumn": 64
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-3140",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-3140: Try to use anchored records as targets for your cursors.",
+        "filePath": "sample/guidelines/guideline_3140_29.sql",
+        "textRange": {
+          "startLine": 22,
+          "endLine": 22,
+          "startColumn": 24,
+          "endColumn": 67
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-3145",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-3145: Avoid using SELECT * directly from a table or view.",
+        "filePath": "sample/guidelines/guideline_3145_na.sql",
+        "textRange": {
+          "startLine": 19,
+          "endLine": 19,
+          "startColumn": 13,
+          "endColumn": 14
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-3150",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-3150: Try to use identity columns for surrogate keys.",
+        "filePath": "sample/guidelines/guideline_3150_na.sql",
+        "textRange": {
+          "startLine": 26,
+          "endLine": 26,
+          "startColumn": 36,
+          "endColumn": 43
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-3145",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-3145: Avoid using SELECT * directly from a table or view.",
+        "filePath": "sample/guidelines/guideline_3170_na.sql",
+        "textRange": {
+          "startLine": 23,
+          "endLine": 23,
+          "startColumn": 7,
+          "endColumn": 8
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-3145",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-3145: Avoid using SELECT * directly from a table or view.",
+        "filePath": "sample/guidelines/guideline_3170_na.sql",
+        "textRange": {
+          "startLine": 42,
+          "endLine": 42,
+          "startColumn": 7,
+          "endColumn": 8
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-3180",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-3180: Always specify column names instead of positional references in ORDER BY clauses.",
+        "filePath": "sample/guidelines/guideline_3180_na.sql",
+        "textRange": {
+          "startLine": 15,
+          "endLine": 15,
+          "startColumn": 10,
+          "endColumn": 11
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-3180",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-3180: Always specify column names instead of positional references in ORDER BY clauses.",
+        "filePath": "sample/guidelines/guideline_3180_na.sql",
+        "textRange": {
+          "startLine": 15,
+          "endLine": 15,
+          "startColumn": 12,
+          "endColumn": 13
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-3180",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-3180: Always specify column names instead of positional references in ORDER BY clauses.",
+        "filePath": "sample/guidelines/guideline_3180_na.sql",
+        "textRange": {
+          "startLine": 15,
+          "endLine": 15,
+          "startColumn": 14,
+          "endColumn": 15
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-3185",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-3185: Never use ROWNUM at the same query level as ORDER BY.",
+        "filePath": "sample/guidelines/guideline_3185_na.sql",
+        "textRange": {
+          "startLine": 17,
+          "endLine": 17,
+          "startColumn": 7,
+          "endColumn": 13
+        }
+      },
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-3190",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-3190: Avoid using NATURAL JOIN.",
+        "filePath": "sample/guidelines/guideline_3190_na.sql",
+        "textRange": {
+          "startLine": 13,
+          "endLine": 13,
+          "startColumn": 0,
+          "endColumn": 26
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-3190",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-3190: Avoid using NATURAL JOIN.",
+        "filePath": "sample/guidelines/guideline_3190_na.sql",
+        "textRange": {
+          "startLine": 32,
+          "endLine": 32,
+          "startColumn": 0,
+          "endColumn": 26
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-3195",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-3195: Always use wildcards in a LIKE clause.",
+        "filePath": "sample/guidelines/guideline_3195_na.sql",
+        "textRange": {
+          "startLine": 15,
+          "endLine": 15,
+          "startColumn": 7,
+          "endColumn": 31
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-3210",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-3210: Always use BULK OPERATIONS (BULK COLLECT, FORALL) whenever you have to execute a DML statement for more than 4 times.",
+        "filePath": "sample/guidelines/guideline_3210_30.sql",
+        "textRange": {
+          "startLine": 22,
+          "endLine": 22,
+          "startColumn": 6,
+          "endColumn": 12
+        }
+      },
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-3220",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-3220: Always process saved exceptions from a FORALL statement.",
+        "filePath": "sample/guidelines/guideline_3220_na.sql",
+        "textRange": {
+          "startLine": 22,
+          "endLine": 25,
+          "startColumn": 3,
+          "endColumn": 44
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-3310",
+      "severity": "CRITICAL",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-3310: Never commit within a cursor loop.",
+        "filePath": "sample/guidelines/guideline_3310_na.sql",
+        "textRange": {
+          "startLine": 38,
+          "endLine": 38,
+          "startColumn": 9,
+          "endColumn": 15
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-3210",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-3210: Always use BULK OPERATIONS (BULK COLLECT, FORALL) whenever you have to execute a DML statement for more than 4 times.",
+        "filePath": "sample/guidelines/guideline_3310_na.sql",
+        "textRange": {
+          "startLine": 32,
+          "endLine": 32,
+          "startColumn": 6,
+          "endColumn": 12
+        }
+      },
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-3210",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-3210: Always use BULK OPERATIONS (BULK COLLECT, FORALL) whenever you have to execute a DML statement for more than 4 times.",
+        "filePath": "sample/guidelines/guideline_3310_na.sql",
+        "textRange": {
+          "startLine": 61,
+          "endLine": 61,
+          "startColumn": 6,
+          "endColumn": 12
+        }
+      },
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-3320",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-3320: Try to move transactions within a non-cursor loop into procedures.",
+        "filePath": "sample/guidelines/guideline_3320_na.sql",
+        "textRange": {
+          "startLine": 21,
+          "endLine": 21,
+          "startColumn": 6,
+          "endColumn": 12
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-3210",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-3210: Always use BULK OPERATIONS (BULK COLLECT, FORALL) whenever you have to execute a DML statement for more than 4 times.",
+        "filePath": "sample/guidelines/guideline_3320_na.sql",
+        "textRange": {
+          "startLine": 14,
+          "endLine": 14,
+          "startColumn": 6,
+          "endColumn": 12
+        }
+      },
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-3210",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-3210: Always use BULK OPERATIONS (BULK COLLECT, FORALL) whenever you have to execute a DML statement for more than 4 times.",
+        "filePath": "sample/guidelines/guideline_3320_na.sql",
+        "textRange": {
+          "startLine": 16,
+          "endLine": 16,
+          "startColumn": 6,
+          "endColumn": 12
+        }
+      },
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4395",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4395: Avoid hard-coded upper or lower bound values with FOR loops.",
+        "filePath": "sample/guidelines/guideline_3320_na.sql",
+        "textRange": {
+          "startLine": 12,
+          "endLine": 12,
+          "startColumn": 20,
+          "endColumn": 24
+        }
+      },
+      "effortMinutes": 16
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7120",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7120: Always add the name of the program unit to its end keyword.",
+        "filePath": "sample/guidelines/guideline_3320_na.sql",
+        "textRange": {
+          "startLine": 28,
+          "endLine": 28,
+          "startColumn": 13,
+          "endColumn": 24
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_3320_na.sql",
+        "textRange": {
+          "startLine": 29,
+          "endLine": 29,
+          "startColumn": 6,
+          "endColumn": 36
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4395",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4395: Avoid hard-coded upper or lower bound values with FOR loops.",
+        "filePath": "sample/guidelines/guideline_3320_na.sql",
+        "textRange": {
+          "startLine": 43,
+          "endLine": 43,
+          "startColumn": 20,
+          "endColumn": 24
+        }
+      },
+      "effortMinutes": 16
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4330",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4330: Always use a CURSOR FOR loop to process the complete cursor results unless you are using bulk operations.",
+        "filePath": "sample/guidelines/guideline_4110_31.sql",
+        "textRange": {
+          "startLine": 20,
+          "endLine": 20,
+          "startColumn": 6,
+          "endColumn": 39
+        }
+      },
+      "effortMinutes": 15
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4110",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4110: Always use %NOTFOUND instead of NOT %FOUND to check whether a cursor returned data.",
+        "filePath": "sample/guidelines/guideline_4110_31.sql",
+        "textRange": {
+          "startLine": 21,
+          "endLine": 21,
+          "startColumn": 31,
+          "endColumn": 52
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4330",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4330: Always use a CURSOR FOR loop to process the complete cursor results unless you are using bulk operations.",
+        "filePath": "sample/guidelines/guideline_4110_31.sql",
+        "textRange": {
+          "startLine": 42,
+          "endLine": 42,
+          "startColumn": 6,
+          "endColumn": 39
+        }
+      },
+      "effortMinutes": 15
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4120",
+      "severity": "CRITICAL",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4120: Avoid using %NOTFOUND directly after the FETCH when working with BULK OPERATIONS and LIMIT clause.",
+        "filePath": "sample/guidelines/guideline_4120_32.sql",
+        "textRange": {
+          "startLine": 26,
+          "endLine": 26,
+          "startColumn": 34,
+          "endColumn": 54
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_4130_33.sql",
+        "textRange": {
+          "startLine": 12,
+          "endLine": 12,
+          "startColumn": 30,
+          "endColumn": 74
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4130",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4130: Always close locally opened cursors.",
+        "filePath": "sample/guidelines/guideline_4130_33.sql",
+        "textRange": {
+          "startLine": 20,
+          "endLine": 20,
+          "startColumn": 11,
+          "endColumn": 30
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_4130_33.sql",
+        "textRange": {
+          "startLine": 30,
+          "endLine": 30,
+          "startColumn": 30,
+          "endColumn": 74
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_4140_34.sql",
+        "textRange": {
+          "startLine": 18,
+          "endLine": 18,
+          "startColumn": 26,
+          "endColumn": 70
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_4140_34.sql",
+        "textRange": {
+          "startLine": 23,
+          "endLine": 23,
+          "startColumn": 29,
+          "endColumn": 73
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4140",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4140: Avoid executing any statements between a SQL operation and the usage of an implicit cursor attribute.",
+        "filePath": "sample/guidelines/guideline_4140_34.sql",
+        "textRange": {
+          "startLine": 32,
+          "endLine": 32,
+          "startColumn": 9,
+          "endColumn": 21
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_4140_34.sql",
+        "textRange": {
+          "startLine": 44,
+          "endLine": 44,
+          "startColumn": 26,
+          "endColumn": 70
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_4140_34.sql",
+        "textRange": {
+          "startLine": 49,
+          "endLine": 49,
+          "startColumn": 29,
+          "endColumn": 73
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4210",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4210: Try to use CASE rather than an IF statement with multiple ELSIF paths.",
+        "filePath": "sample/guidelines/guideline_4210_35.sql",
+        "textRange": {
+          "startLine": 10,
+          "endLine": 16,
+          "startColumn": 3,
+          "endColumn": 9
+        }
+      },
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4220",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4220: Try to use CASE rather than DECODE.",
+        "filePath": "sample/guidelines/guideline_4220_36.sql",
+        "textRange": {
+          "startLine": 11,
+          "endLine": 11,
+          "startColumn": 7,
+          "endColumn": 13
+        }
+      },
+      "effortMinutes": 5
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4220",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4220: Try to use CASE rather than DECODE.",
+        "filePath": "sample/guidelines/guideline_4220_36.sql",
+        "textRange": {
+          "startLine": 18,
+          "endLine": 18,
+          "startColumn": 7,
+          "endColumn": 13
+        }
+      },
+      "effortMinutes": 5
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4230",
+      "severity": "CRITICAL",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4230: Always use a COALESCE instead of a NVL command, if parameter 2 of the NVL function is a function call or a SELECT statement.",
+        "filePath": "sample/guidelines/guideline_4230_37.sql",
+        "textRange": {
+          "startLine": 10,
+          "endLine": 10,
+          "startColumn": 7,
+          "endColumn": 62
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4240",
+      "severity": "CRITICAL",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4240: Always use a CASE instead of a NVL2 command if parameter 2 or 3 of NVL2 is either a function call or a SELECT statement.",
+        "filePath": "sample/guidelines/guideline_4240_38.sql",
+        "textRange": {
+          "startLine": 9,
+          "endLine": 10,
+          "startColumn": 7,
+          "endColumn": 55
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4250",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4250: Avoid using identical conditions in different branches of the same IF or CASE statement.",
+        "filePath": "sample/guidelines/guideline_4250_na.sql",
+        "textRange": {
+          "startLine": 18,
+          "endLine": 18,
+          "startColumn": 11,
+          "endColumn": 30
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4260",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4260: Avoid inverting boolean conditions with NOT.",
+        "filePath": "sample/guidelines/guideline_4260_na.sql",
+        "textRange": {
+          "startLine": 11,
+          "endLine": 11,
+          "startColumn": 6,
+          "endColumn": 17
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4270",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4270: Avoid comparing boolean values to boolean literals.",
+        "filePath": "sample/guidelines/guideline_4270_na.sql",
+        "textRange": {
+          "startLine": 13,
+          "endLine": 13,
+          "startColumn": 6,
+          "endColumn": 23
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_4310_39.sql",
+        "textRange": {
+          "startLine": 18,
+          "endLine": 18,
+          "startColumn": 28,
+          "endColumn": 51
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4310",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4310: Never use GOTO statements in your code.",
+        "filePath": "sample/guidelines/guideline_4310_39.sql",
+        "textRange": {
+          "startLine": 38,
+          "endLine": 38,
+          "startColumn": 15,
+          "endColumn": 38
+        }
+      },
+      "effortMinutes": 15
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_4310_39.sql",
+        "textRange": {
+          "startLine": 55,
+          "endLine": 55,
+          "startColumn": 28,
+          "endColumn": 51
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4365",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4365: Never use unconditional CONTINUE or EXIT in a loop.",
+        "filePath": "sample/guidelines/guideline_4310_39.sql",
+        "textRange": {
+          "startLine": 75,
+          "endLine": 75,
+          "startColumn": 15,
+          "endColumn": 31
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4370",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4370: Avoid using EXIT to stop loop processing unless you are in a basic loop.",
+        "filePath": "sample/guidelines/guideline_4310_39.sql",
+        "textRange": {
+          "startLine": 75,
+          "endLine": 75,
+          "startColumn": 15,
+          "endColumn": 31
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4375",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4375: Always use EXIT WHEN instead of an IF statement to exit from a loop.",
+        "filePath": "sample/guidelines/guideline_4310_39.sql",
+        "textRange": {
+          "startLine": 75,
+          "endLine": 75,
+          "startColumn": 15,
+          "endColumn": 31
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_4310_39.sql",
+        "textRange": {
+          "startLine": 92,
+          "endLine": 92,
+          "startColumn": 28,
+          "endColumn": 51
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4320",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4320: Always label your loops.",
+        "filePath": "sample/guidelines/guideline_4320_40.sql",
+        "textRange": {
+          "startLine": 14,
+          "endLine": 17,
+          "startColumn": 3,
+          "endColumn": 11
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4320",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4320: Always label your loops.",
+        "filePath": "sample/guidelines/guideline_4320_40.sql",
+        "textRange": {
+          "startLine": 19,
+          "endLine": 21,
+          "startColumn": 3,
+          "endColumn": 11
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4365",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4365: Never use unconditional CONTINUE or EXIT in a loop.",
+        "filePath": "sample/guidelines/guideline_4320_40.sql",
+        "textRange": {
+          "startLine": 20,
+          "endLine": 20,
+          "startColumn": 6,
+          "endColumn": 10
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4380",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4380: Try to label your EXIT WHEN statements.",
+        "filePath": "sample/guidelines/guideline_4320_40.sql",
+        "textRange": {
+          "startLine": 20,
+          "endLine": 20,
+          "startColumn": 6,
+          "endColumn": 10
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4320",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4320: Always label your loops.",
+        "filePath": "sample/guidelines/guideline_4320_40.sql",
+        "textRange": {
+          "startLine": 23,
+          "endLine": 26,
+          "startColumn": 3,
+          "endColumn": 11
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4320",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4320: Always label your loops.",
+        "filePath": "sample/guidelines/guideline_4320_40.sql",
+        "textRange": {
+          "startLine": 28,
+          "endLine": 31,
+          "startColumn": 3,
+          "endColumn": 11
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4365",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4365: Never use unconditional CONTINUE or EXIT in a loop.",
+        "filePath": "sample/guidelines/guideline_4320_40.sql",
+        "textRange": {
+          "startLine": 51,
+          "endLine": 51,
+          "startColumn": 6,
+          "endColumn": 21
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4325",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4325: Never reuse labels in inner scopes.",
+        "filePath": "sample/guidelines/guideline_4325_na.sql",
+        "textRange": {
+          "startLine": 14,
+          "endLine": 14,
+          "startColumn": 3,
+          "endColumn": 15
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4330",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4330: Always use a CURSOR FOR loop to process the complete cursor results unless you are using bulk operations.",
+        "filePath": "sample/guidelines/guideline_4330_41.sql",
+        "textRange": {
+          "startLine": 21,
+          "endLine": 21,
+          "startColumn": 6,
+          "endColumn": 39
+        }
+      },
+      "effortMinutes": 15
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4340",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4340: Always use a NUMERIC FOR loop to process a dense array.",
+        "filePath": "sample/guidelines/guideline_4340_42.sql",
+        "textRange": {
+          "startLine": 27,
+          "endLine": 27,
+          "startColumn": 34,
+          "endColumn": 57
+        }
+      },
+      "effortMinutes": 15
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4350",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4350: Always use 1 as lower and COUNT() as upper bound when looping through a dense array.",
+        "filePath": "sample/guidelines/guideline_4350_43.sql",
+        "textRange": {
+          "startLine": 18,
+          "endLine": 18,
+          "startColumn": 12,
+          "endColumn": 51
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4360",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4360: Always use a WHILE loop to process a loose array.",
+        "filePath": "sample/guidelines/guideline_4360_44.sql",
+        "textRange": {
+          "startLine": 28,
+          "endLine": 28,
+          "startColumn": 15,
+          "endColumn": 37
+        }
+      },
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4365",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4365: Never use unconditional CONTINUE or EXIT in a loop.",
+        "filePath": "sample/guidelines/guideline_4365_na.sql",
+        "textRange": {
+          "startLine": 13,
+          "endLine": 13,
+          "startColumn": 6,
+          "endColumn": 32
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4370",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4370: Avoid using EXIT to stop loop processing unless you are in a basic loop.",
+        "filePath": "sample/guidelines/guideline_4370_45.sql",
+        "textRange": {
+          "startLine": 20,
+          "endLine": 20,
+          "startColumn": 6,
+          "endColumn": 43
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4365",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4365: Never use unconditional CONTINUE or EXIT in a loop.",
+        "filePath": "sample/guidelines/guideline_4370_45.sql",
+        "textRange": {
+          "startLine": 25,
+          "endLine": 25,
+          "startColumn": 6,
+          "endColumn": 21
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4370",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4370: Avoid using EXIT to stop loop processing unless you are in a basic loop.",
+        "filePath": "sample/guidelines/guideline_4370_45.sql",
+        "textRange": {
+          "startLine": 32,
+          "endLine": 32,
+          "startColumn": 6,
+          "endColumn": 41
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4365",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4365: Never use unconditional CONTINUE or EXIT in a loop.",
+        "filePath": "sample/guidelines/guideline_4370_45.sql",
+        "textRange": {
+          "startLine": 43,
+          "endLine": 43,
+          "startColumn": 6,
+          "endColumn": 28
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4370",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4370: Avoid using EXIT to stop loop processing unless you are in a basic loop.",
+        "filePath": "sample/guidelines/guideline_4370_45.sql",
+        "textRange": {
+          "startLine": 43,
+          "endLine": 43,
+          "startColumn": 6,
+          "endColumn": 28
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4365",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4365: Never use unconditional CONTINUE or EXIT in a loop.",
+        "filePath": "sample/guidelines/guideline_4370_45.sql",
+        "textRange": {
+          "startLine": 64,
+          "endLine": 64,
+          "startColumn": 6,
+          "endColumn": 21
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4365",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4365: Never use unconditional CONTINUE or EXIT in a loop.",
+        "filePath": "sample/guidelines/guideline_4375_46.sql",
+        "textRange": {
+          "startLine": 16,
+          "endLine": 16,
+          "startColumn": 9,
+          "endColumn": 31
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4375",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4375: Always use EXIT WHEN instead of an IF statement to exit from a loop.",
+        "filePath": "sample/guidelines/guideline_4375_46.sql",
+        "textRange": {
+          "startLine": 16,
+          "endLine": 16,
+          "startColumn": 9,
+          "endColumn": 31
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4380",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4380: Try to label your EXIT WHEN statements.",
+        "filePath": "sample/guidelines/guideline_4380_47.sql",
+        "textRange": {
+          "startLine": 29,
+          "endLine": 29,
+          "startColumn": 9,
+          "endColumn": 44
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4380",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4380: Try to label your EXIT WHEN statements.",
+        "filePath": "sample/guidelines/guideline_4380_47.sql",
+        "textRange": {
+          "startLine": 32,
+          "endLine": 32,
+          "startColumn": 6,
+          "endColumn": 41
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2135",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2135: Avoid assigning values to local variables that are not used by a subsequent statement.",
+        "filePath": "sample/guidelines/guideline_4385_48.sql",
+        "textRange": {
+          "startLine": 16,
+          "endLine": 16,
+          "startColumn": 6,
+          "endColumn": 30
+        }
+      },
+      "effortMinutes": 5
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4385",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4385: Never use a cursor for loop to check whether a cursor returns data.",
+        "filePath": "sample/guidelines/guideline_4385_48.sql",
+        "textRange": {
+          "startLine": 14,
+          "endLine": 17,
+          "startColumn": 3,
+          "endColumn": 27
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2135",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2135: Avoid assigning values to local variables that are not used by a subsequent statement.",
+        "filePath": "sample/guidelines/guideline_4385_48.sql",
+        "textRange": {
+          "startLine": 31,
+          "endLine": 31,
+          "startColumn": 3,
+          "endColumn": 40
+        }
+      },
+      "effortMinutes": 5
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4390",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4390: Avoid use of unreferenced FOR loop indexes.",
+        "filePath": "sample/guidelines/guideline_4390_49.sql",
+        "textRange": {
+          "startLine": 23,
+          "endLine": 30,
+          "startColumn": 3,
+          "endColumn": 20
+        }
+      },
+      "effortMinutes": 5
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4395",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4395: Avoid hard-coded upper or lower bound values with FOR loops.",
+        "filePath": "sample/guidelines/guideline_4395_50.sql",
+        "textRange": {
+          "startLine": 12,
+          "endLine": 12,
+          "startColumn": 12,
+          "endColumn": 16
+        }
+      },
+      "effortMinutes": 16
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-5020",
+      "severity": "CRITICAL",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-5020: Never handle unnamed exceptions using the error number.",
+        "filePath": "sample/guidelines/guideline_5020_51.sql",
+        "textRange": {
+          "startLine": 18,
+          "endLine": 18,
+          "startColumn": 9,
+          "endColumn": 16
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-5030",
+      "severity": "BLOCKER",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-5030: Never assign predefined exception names to user defined exceptions.",
+        "filePath": "sample/guidelines/guideline_5030_52.sql",
+        "textRange": {
+          "startLine": 16,
+          "endLine": 16,
+          "startColumn": 3,
+          "endColumn": 16
+        }
+      },
+      "effortMinutes": 11
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-5070",
+      "severity": "CRITICAL",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-5070: Avoid using Oracle predefined exceptions",
+        "filePath": "sample/guidelines/guideline_5030_52.sql",
+        "textRange": {
+          "startLine": 26,
+          "endLine": 26,
+          "startColumn": 12,
+          "endColumn": 25
+        }
+      },
+      "effortMinutes": 11
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-5040",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-5040: Avoid use of WHEN OTHERS clause in an exception section without any other specific handlers.",
+        "filePath": "sample/guidelines/guideline_5040_53.sql",
+        "textRange": {
+          "startLine": 21,
+          "endLine": 21,
+          "startColumn": 8,
+          "endColumn": 14
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-5050",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-5050: Avoid use of the RAISE_APPLICATION_ERROR built-in procedure with a hard-coded 20nnn error number or hard-coded message.",
+        "filePath": "sample/guidelines/guideline_5050_55.sql",
+        "textRange": {
+          "startLine": 18,
+          "endLine": 18,
+          "startColumn": 27,
+          "endColumn": 33
+        }
+      },
+      "effortMinutes": 11
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_5060_56.sql",
+        "textRange": {
+          "startLine": 16,
+          "endLine": 16,
+          "startColumn": 23,
+          "endColumn": 62
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-5060",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-5060: Avoid unhandled exceptions",
+        "filePath": "sample/guidelines/guideline_5060_56.sql",
+        "textRange": {
+          "startLine": 20,
+          "endLine": 23,
+          "startColumn": 6,
+          "endColumn": 34
+        }
+      },
+      "effortMinutes": 11
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_5060_56.sql",
+        "textRange": {
+          "startLine": 32,
+          "endLine": 32,
+          "startColumn": 23,
+          "endColumn": 62
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-5070",
+      "severity": "CRITICAL",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-5070: Avoid using Oracle predefined exceptions",
+        "filePath": "sample/guidelines/guideline_5070_57.sql",
+        "textRange": {
+          "startLine": 16,
+          "endLine": 16,
+          "startColumn": 9,
+          "endColumn": 22
+        }
+      },
+      "effortMinutes": 11
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_5080_na.sql",
+        "textRange": {
+          "startLine": 13,
+          "endLine": 13,
+          "startColumn": 6,
+          "endColumn": 40
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_5080_na.sql",
+        "textRange": {
+          "startLine": 14,
+          "endLine": 14,
+          "startColumn": 6,
+          "endColumn": 57
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7110",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7110: Try to use named notation when calling program units.",
+        "filePath": "sample/guidelines/guideline_5080_na.sql",
+        "textRange": {
+          "startLine": 17,
+          "endLine": 17,
+          "startColumn": 34,
+          "endColumn": 48
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7110",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7110: Try to use named notation when calling program units.",
+        "filePath": "sample/guidelines/guideline_5080_na.sql",
+        "textRange": {
+          "startLine": 17,
+          "endLine": 17,
+          "startColumn": 49,
+          "endColumn": 60
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-5080",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-5080: Always use FORMAT_ERROR_BACKTRACE when using FORMAT_ERROR_STACK or SQLERRM.",
+        "filePath": "sample/guidelines/guideline_5080_na.sql",
+        "textRange": {
+          "startLine": 23,
+          "endLine": 23,
+          "startColumn": 48,
+          "endColumn": 55
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_5080_na.sql",
+        "textRange": {
+          "startLine": 32,
+          "endLine": 32,
+          "startColumn": 6,
+          "endColumn": 40
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_5080_na.sql",
+        "textRange": {
+          "startLine": 33,
+          "endLine": 33,
+          "startColumn": 6,
+          "endColumn": 57
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7110",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7110: Try to use named notation when calling program units.",
+        "filePath": "sample/guidelines/guideline_5080_na.sql",
+        "textRange": {
+          "startLine": 36,
+          "endLine": 36,
+          "startColumn": 34,
+          "endColumn": 48
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7110",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7110: Try to use named notation when calling program units.",
+        "filePath": "sample/guidelines/guideline_5080_na.sql",
+        "textRange": {
+          "startLine": 36,
+          "endLine": 36,
+          "startColumn": 49,
+          "endColumn": 60
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-6010",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-6010: Always use a character variable to execute dynamic SQL.",
+        "filePath": "sample/guidelines/guideline_6010_58.sql",
+        "textRange": {
+          "startLine": 11,
+          "endLine": 11,
+          "startColumn": 21,
+          "endColumn": 61
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_6020_59.sql",
+        "textRange": {
+          "startLine": 12,
+          "endLine": 12,
+          "startColumn": 24,
+          "endColumn": 70
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_6020_59.sql",
+        "textRange": {
+          "startLine": 13,
+          "endLine": 13,
+          "startColumn": 24,
+          "endColumn": 63
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-6020",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-6020: Try to use output bind arguments in the RETURNING INTO clause of dynamic DML statements rather than the USING clause.",
+        "filePath": "sample/guidelines/guideline_6020_59.sql",
+        "textRange": {
+          "startLine": 22,
+          "endLine": 22,
+          "startColumn": 9,
+          "endColumn": 64
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_6020_59.sql",
+        "textRange": {
+          "startLine": 29,
+          "endLine": 29,
+          "startColumn": 24,
+          "endColumn": 70
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_6020_59.sql",
+        "textRange": {
+          "startLine": 30,
+          "endLine": 30,
+          "startColumn": 24,
+          "endColumn": 63
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7110",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7110: Try to use named notation when calling program units.",
+        "filePath": "sample/guidelines/guideline_7110_60.sql",
+        "textRange": {
+          "startLine": 14,
+          "endLine": 14,
+          "startColumn": 31,
+          "endColumn": 41
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7110",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7110: Try to use named notation when calling program units.",
+        "filePath": "sample/guidelines/guideline_7110_60.sql",
+        "textRange": {
+          "startLine": 14,
+          "endLine": 14,
+          "startColumn": 42,
+          "endColumn": 47
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7120",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7120: Always add the name of the program unit to its end keyword.",
+        "filePath": "sample/guidelines/guideline_7120_61.sql",
+        "textRange": {
+          "startLine": 10,
+          "endLine": 29,
+          "startColumn": 0,
+          "endColumn": 0
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7120",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7120: Always add the name of the program unit to its end keyword.",
+        "filePath": "sample/guidelines/guideline_7120_61.sql",
+        "textRange": {
+          "startLine": 11,
+          "endLine": 11,
+          "startColumn": 12,
+          "endColumn": 26
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7120_61.sql",
+        "textRange": {
+          "startLine": 11,
+          "endLine": 11,
+          "startColumn": 27,
+          "endColumn": 71
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7120_61.sql",
+        "textRange": {
+          "startLine": 32,
+          "endLine": 32,
+          "startColumn": 27,
+          "endColumn": 71
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7125",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7125: Always use CREATE OR REPLACE instead of CREATE alone.",
+        "filePath": "sample/guidelines/guideline_7125_na.sql",
+        "textRange": {
+          "startLine": 10,
+          "endLine": 10,
+          "startColumn": 20,
+          "endColumn": 32
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7125_na.sql",
+        "textRange": {
+          "startLine": 11,
+          "endLine": 11,
+          "startColumn": 27,
+          "endColumn": 71
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7125_na.sql",
+        "textRange": {
+          "startLine": 32,
+          "endLine": 32,
+          "startColumn": 27,
+          "endColumn": 71
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7130_62.sql",
+        "textRange": {
+          "startLine": 16,
+          "endLine": 16,
+          "startColumn": 25,
+          "endColumn": 69
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7130",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7130: Always use parameters or pull in definitions rather than referencing external variables in a local program unit.",
+        "filePath": "sample/guidelines/guideline_7130_62.sql",
+        "textRange": {
+          "startLine": 22,
+          "endLine": 22,
+          "startColumn": 12,
+          "endColumn": 17
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7130",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7130: Always use parameters or pull in definitions rather than referencing external variables in a local program unit.",
+        "filePath": "sample/guidelines/guideline_7130_62.sql",
+        "textRange": {
+          "startLine": 23,
+          "endLine": 23,
+          "startColumn": 28,
+          "endColumn": 33
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7130",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7130: Always use parameters or pull in definitions rather than referencing external variables in a local program unit.",
+        "filePath": "sample/guidelines/guideline_7130_62.sql",
+        "textRange": {
+          "startLine": 23,
+          "endLine": 23,
+          "startColumn": 43,
+          "endColumn": 48
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7130_62.sql",
+        "textRange": {
+          "startLine": 46,
+          "endLine": 46,
+          "startColumn": 25,
+          "endColumn": 69
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7130_62.sql",
+        "textRange": {
+          "startLine": 49,
+          "endLine": 49,
+          "startColumn": 26,
+          "endColumn": 62
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7130_62.sql",
+        "textRange": {
+          "startLine": 50,
+          "endLine": 50,
+          "startColumn": 26,
+          "endColumn": 70
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7140",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7140: Always ensure that locally defined procedures or functions are referenced.",
+        "filePath": "sample/guidelines/guideline_7140_63.sql",
+        "textRange": {
+          "startLine": 19,
+          "endLine": 19,
+          "startColumn": 6,
+          "endColumn": 36
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7150",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7150: Try to remove unused parameters.",
+        "filePath": "sample/guidelines/guideline_7150_64.sql",
+        "textRange": {
+          "startLine": 9,
+          "endLine": 9,
+          "startColumn": 23,
+          "endColumn": 70
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7150_64.sql",
+        "textRange": {
+          "startLine": 8,
+          "endLine": 8,
+          "startColumn": 23,
+          "endColumn": 73
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7150_64.sql",
+        "textRange": {
+          "startLine": 9,
+          "endLine": 9,
+          "startColumn": 23,
+          "endColumn": 70
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7150_64.sql",
+        "textRange": {
+          "startLine": 31,
+          "endLine": 31,
+          "startColumn": 23,
+          "endColumn": 73
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7160",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7160: Always explicitly state parameter mode.",
+        "filePath": "sample/guidelines/guideline_7160_68.sql",
+        "textRange": {
+          "startLine": 12,
+          "endLine": 12,
+          "startColumn": 19,
+          "endColumn": 63
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7160",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7160: Always explicitly state parameter mode.",
+        "filePath": "sample/guidelines/guideline_7160_68.sql",
+        "textRange": {
+          "startLine": 13,
+          "endLine": 13,
+          "startColumn": 19,
+          "endColumn": 62
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7160",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7160: Always explicitly state parameter mode.",
+        "filePath": "sample/guidelines/guideline_7160_68.sql",
+        "textRange": {
+          "startLine": 14,
+          "endLine": 14,
+          "startColumn": 19,
+          "endColumn": 58
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7160",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7160: Always explicitly state parameter mode.",
+        "filePath": "sample/guidelines/guideline_7160_68.sql",
+        "textRange": {
+          "startLine": 15,
+          "endLine": 15,
+          "startColumn": 19,
+          "endColumn": 66
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7170_na.sql",
+        "textRange": {
+          "startLine": 22,
+          "endLine": 22,
+          "startColumn": 21,
+          "endColumn": 53
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7170_na.sql",
+        "textRange": {
+          "startLine": 58,
+          "endLine": 58,
+          "startColumn": 21,
+          "endColumn": 51
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7210",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7210: Try to keep your packages small. Include only few procedures and functions that are used in the same context.",
+        "filePath": "sample/guidelines/guideline_7210_65.sql",
+        "textRange": {
+          "startLine": 9,
+          "endLine": 9,
+          "startColumn": 31,
+          "endColumn": 42
+        }
+      },
+      "effortMinutes": 240
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7220",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7220: Always use forward declaration for private functions and procedures.",
+        "filePath": "sample/guidelines/guideline_7220_66.sql",
+        "textRange": {
+          "startLine": 14,
+          "endLine": 14,
+          "startColumn": 12,
+          "endColumn": 22
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7220",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7220: Always use forward declaration for private functions and procedures.",
+        "filePath": "sample/guidelines/guideline_7220_66.sql",
+        "textRange": {
+          "startLine": 14,
+          "endLine": 14,
+          "startColumn": 12,
+          "endColumn": 22
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7220_66.sql",
+        "textRange": {
+          "startLine": 14,
+          "endLine": 14,
+          "startColumn": 23,
+          "endColumn": 73
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7220_66.sql",
+        "textRange": {
+          "startLine": 32,
+          "endLine": 32,
+          "startColumn": 17,
+          "endColumn": 67
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7220_66.sql",
+        "textRange": {
+          "startLine": 51,
+          "endLine": 51,
+          "startColumn": 17,
+          "endColumn": 67
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7220_66.sql",
+        "textRange": {
+          "startLine": 58,
+          "endLine": 58,
+          "startColumn": 23,
+          "endColumn": 73
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7230",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7230: Avoid declaring global variables public.",
+        "filePath": "sample/guidelines/guideline_7230_67.sql",
+        "textRange": {
+          "startLine": 25,
+          "endLine": 25,
+          "startColumn": 3,
+          "endColumn": 20
+        }
+      },
+      "effortMinutes": 11
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7230_67.sql",
+        "textRange": {
+          "startLine": 33,
+          "endLine": 33,
+          "startColumn": 33,
+          "endColumn": 74
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7230_67.sql",
+        "textRange": {
+          "startLine": 64,
+          "endLine": 64,
+          "startColumn": 33,
+          "endColumn": 74
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7250",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7250: Never use RETURN in package initialization block.",
+        "filePath": "sample/guidelines/guideline_7250_na.sql",
+        "textRange": {
+          "startLine": 27,
+          "endLine": 27,
+          "startColumn": 3,
+          "endColumn": 9
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7250_na.sql",
+        "textRange": {
+          "startLine": 13,
+          "endLine": 13,
+          "startColumn": 33,
+          "endColumn": 74
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-1040",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-1040: Avoid dead code.",
+        "filePath": "sample/guidelines/guideline_7250_na.sql",
+        "textRange": {
+          "startLine": 27,
+          "endLine": 27,
+          "startColumn": 3,
+          "endColumn": 9
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7250_na.sql",
+        "textRange": {
+          "startLine": 37,
+          "endLine": 37,
+          "startColumn": 33,
+          "endColumn": 74
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7310: Avoid standalone procedures – put your procedures in packages.",
+        "filePath": "sample/guidelines/guideline_7310_69.sql",
+        "textRange": {
+          "startLine": 9,
+          "endLine": 9,
+          "startColumn": 28,
+          "endColumn": 40
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7320",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7320: Avoid using RETURN statements in a PROCEDURE.",
+        "filePath": "sample/guidelines/guideline_7320_70.sql",
+        "textRange": {
+          "startLine": 20,
+          "endLine": 20,
+          "startColumn": 12,
+          "endColumn": 18
+        }
+      },
+      "effortMinutes": 4
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7150",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7150: Try to remove unused parameters.",
+        "filePath": "sample/guidelines/guideline_7330_na.sql",
+        "textRange": {
+          "startLine": 12,
+          "endLine": 12,
+          "startColumn": 6,
+          "endColumn": 31
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7330_na.sql",
+        "textRange": {
+          "startLine": 11,
+          "endLine": 11,
+          "startColumn": 6,
+          "endColumn": 31
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7330",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7330: Always assign values to OUT parameters.",
+        "filePath": "sample/guidelines/guideline_7330_na.sql",
+        "textRange": {
+          "startLine": 12,
+          "endLine": 12,
+          "startColumn": 6,
+          "endColumn": 18
+        }
+      },
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2135",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2135: Avoid assigning values to local variables that are not used by a subsequent statement.",
+        "filePath": "sample/guidelines/guideline_7330_na.sql",
+        "textRange": {
+          "startLine": 16,
+          "endLine": 16,
+          "startColumn": 6,
+          "endColumn": 39
+        }
+      },
+      "effortMinutes": 5
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7330_na.sql",
+        "textRange": {
+          "startLine": 24,
+          "endLine": 24,
+          "startColumn": 6,
+          "endColumn": 31
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7410",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7410: Avoid standalone functions – put your functions in packages.",
+        "filePath": "sample/guidelines/guideline_7410_71.sql",
+        "textRange": {
+          "startLine": 9,
+          "endLine": 9,
+          "startColumn": 27,
+          "endColumn": 38
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7420",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7420: Always make the RETURN statement the last statement of your function.",
+        "filePath": "sample/guidelines/guideline_7420_73.sql",
+        "textRange": {
+          "startLine": 18,
+          "endLine": 18,
+          "startColumn": 12,
+          "endColumn": 24
+        }
+      },
+      "effortMinutes": 5
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7420_73.sql",
+        "textRange": {
+          "startLine": 8,
+          "endLine": 8,
+          "startColumn": 24,
+          "endColumn": 46
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7420_73.sql",
+        "textRange": {
+          "startLine": 9,
+          "endLine": 9,
+          "startColumn": 24,
+          "endColumn": 46
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7420_73.sql",
+        "textRange": {
+          "startLine": 27,
+          "endLine": 27,
+          "startColumn": 24,
+          "endColumn": 46
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7420_73.sql",
+        "textRange": {
+          "startLine": 28,
+          "endLine": 28,
+          "startColumn": 24,
+          "endColumn": 46
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7430",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7430: Try to use no more than one RETURN statement within a function.",
+        "filePath": "sample/guidelines/guideline_7430_72.sql",
+        "textRange": {
+          "startLine": 12,
+          "endLine": 12,
+          "startColumn": 9,
+          "endColumn": 20
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7430",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7430: Try to use no more than one RETURN statement within a function.",
+        "filePath": "sample/guidelines/guideline_7430_72.sql",
+        "textRange": {
+          "startLine": 14,
+          "endLine": 14,
+          "startColumn": 9,
+          "endColumn": 21
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7430_72.sql",
+        "textRange": {
+          "startLine": 8,
+          "endLine": 8,
+          "startColumn": 24,
+          "endColumn": 47
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7430_72.sql",
+        "textRange": {
+          "startLine": 22,
+          "endLine": 22,
+          "startColumn": 24,
+          "endColumn": 47
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7430_72.sql",
+        "textRange": {
+          "startLine": 39,
+          "endLine": 39,
+          "startColumn": 24,
+          "endColumn": 47
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7440",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7440: Never use OUT parameters to return values from a function.",
+        "filePath": "sample/guidelines/guideline_7440_74.sql",
+        "textRange": {
+          "startLine": 9,
+          "endLine": 9,
+          "startColumn": 24,
+          "endColumn": 41
+        }
+      },
+      "effortMinutes": 4
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7450",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7450: Never return a NULL value from a BOOLEAN function.",
+        "filePath": "sample/guidelines/guideline_7450_75.sql",
+        "textRange": {
+          "startLine": 11,
+          "endLine": 11,
+          "startColumn": 6,
+          "endColumn": 17
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7510",
+      "severity": "MAJOR",
+      "type": "VULNERABILITY",
+      "primaryLocation": {
+        "message": "G-7510: Always prefix Oracle supplied packages with owner schema name.",
+        "filePath": "sample/guidelines/guideline_7510_76.sql",
+        "textRange": {
+          "startLine": 12,
+          "endLine": 12,
+          "startColumn": 3,
+          "endColumn": 14
+        }
+      },
+      "effortMinutes": 1
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7710",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7710: Avoid cascading triggers.",
+        "filePath": "sample/guidelines/guideline_7710_77.sql",
+        "textRange": {
+          "startLine": 11,
+          "endLine": 11,
+          "startColumn": 15,
+          "endColumn": 31
+        }
+      },
+      "effortMinutes": 16
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7710",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7710: Avoid cascading triggers.",
+        "filePath": "sample/guidelines/guideline_7710_77.sql",
+        "textRange": {
+          "startLine": 43,
+          "endLine": 43,
+          "startColumn": 15,
+          "endColumn": 31
+        }
+      },
+      "effortMinutes": 16
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7730",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7730: Avoid multiple DML events per trigger.",
+        "filePath": "sample/guidelines/guideline_7720_na.sql",
+        "textRange": {
+          "startLine": 12,
+          "endLine": 13,
+          "startColumn": 7,
+          "endColumn": 14
+        }
+      },
+      "effortMinutes": 15
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7720",
+      "severity": "BLOCKER",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7720: Never use multiple UPDATE OF in trigger event clause.",
+        "filePath": "sample/guidelines/guideline_7720_na.sql",
+        "textRange": {
+          "startLine": 12,
+          "endLine": 12,
+          "startColumn": 7,
+          "endColumn": 30
+        }
+      },
+      "effortMinutes": 15
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7730",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7730: Avoid multiple DML events per trigger.",
+        "filePath": "sample/guidelines/guideline_7730_na.sql",
+        "textRange": {
+          "startLine": 17,
+          "endLine": 18,
+          "startColumn": 7,
+          "endColumn": 14
+        }
+      },
+      "effortMinutes": 15
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-3150",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-3150: Try to use identity columns for surrogate keys.",
+        "filePath": "sample/guidelines/guideline_7740_na.sql",
+        "textRange": {
+          "startLine": 21,
+          "endLine": 21,
+          "startColumn": 43,
+          "endColumn": 50
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7730",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7730: Avoid multiple DML events per trigger.",
+        "filePath": "sample/guidelines/guideline_7740_na.sql",
+        "textRange": {
+          "startLine": 17,
+          "endLine": 18,
+          "startColumn": 7,
+          "endColumn": 14
+        }
+      },
+      "effortMinutes": 15
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-3150",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-3150: Try to use identity columns for surrogate keys.",
+        "filePath": "sample/guidelines/guideline_7740_na.sql",
+        "textRange": {
+          "startLine": 35,
+          "endLine": 35,
+          "startColumn": 40,
+          "endColumn": 47
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7810",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7810: Never use SQL inside PL/SQL to read sequence numbers (or SYSDATE).",
+        "filePath": "sample/guidelines/guideline_7810_na.sql",
+        "textRange": {
+          "startLine": 11,
+          "endLine": 11,
+          "startColumn": 24,
+          "endColumn": 31
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-2135",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-2135: Avoid assigning values to local variables that are not used by a subsequent statement.",
+        "filePath": "sample/guidelines/guideline_7810_na.sql",
+        "textRange": {
+          "startLine": 21,
+          "endLine": 21,
+          "startColumn": 3,
+          "endColumn": 45
+        }
+      },
+      "effortMinutes": 5
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7910",
+      "severity": "CRITICAL",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7910: Never use DML within a SQL macro.",
+        "filePath": "sample/guidelines/guideline_7910_na.sql",
+        "textRange": {
+          "startLine": 18,
+          "endLine": 18,
+          "startColumn": 3,
+          "endColumn": 9
+        }
+      },
+      "effortMinutes": 15
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7910",
+      "severity": "CRITICAL",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7910: Never use DML within a SQL macro.",
+        "filePath": "sample/guidelines/guideline_7910_na.sql",
+        "textRange": {
+          "startLine": 20,
+          "endLine": 20,
+          "startColumn": 3,
+          "endColumn": 9
+        }
+      },
+      "effortMinutes": 15
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7410",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7410: Avoid standalone functions – put your functions in packages.",
+        "filePath": "sample/guidelines/guideline_7910_na.sql",
+        "textRange": {
+          "startLine": 13,
+          "endLine": 13,
+          "startColumn": 27,
+          "endColumn": 40
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7910_na.sql",
+        "textRange": {
+          "startLine": 14,
+          "endLine": 14,
+          "startColumn": 3,
+          "endColumn": 24
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-7410",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-7410: Avoid standalone functions – put your functions in packages.",
+        "filePath": "sample/guidelines/guideline_7910_na.sql",
+        "textRange": {
+          "startLine": 29,
+          "endLine": 29,
+          "startColumn": 27,
+          "endColumn": 40
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_7910_na.sql",
+        "textRange": {
+          "startLine": 30,
+          "endLine": 30,
+          "startColumn": 3,
+          "endColumn": 24
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8110",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8110: Never use SELECT COUNT(*) if you are only interested in the existence of a row.",
+        "filePath": "sample/guidelines/guideline_8110_78.sql",
+        "textRange": {
+          "startLine": 15,
+          "endLine": 15,
+          "startColumn": 10,
+          "endColumn": 18
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8110",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8110: Never use SELECT COUNT(*) if you are only interested in the existence of a row.",
+        "filePath": "sample/guidelines/guideline_8120_na.sql",
+        "textRange": {
+          "startLine": 14,
+          "endLine": 14,
+          "startColumn": 13,
+          "endColumn": 21
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8120",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8120: Never check existence of a row to decide whether to create it or not.",
+        "filePath": "sample/guidelines/guideline_8120_na.sql",
+        "textRange": {
+          "startLine": 19,
+          "endLine": 21,
+          "startColumn": 9,
+          "endColumn": 32
+        }
+      },
+      "effortMinutes": 15
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8210",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8210: Always use synonyms when accessing objects of another application schema.",
+        "filePath": "sample/guidelines/guideline_8210_79.sql",
+        "textRange": {
+          "startLine": 19,
+          "endLine": 19,
+          "startColumn": 10,
+          "endColumn": 12
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_8310_na.sql",
+        "textRange": {
+          "startLine": 10,
+          "endLine": 10,
+          "startColumn": 25,
+          "endColumn": 73
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-5060",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-5060: Avoid unhandled exceptions",
+        "filePath": "sample/guidelines/guideline_8310_na.sql",
+        "textRange": {
+          "startLine": 18,
+          "endLine": 21,
+          "startColumn": 6,
+          "endColumn": 43
+        }
+      },
+      "effortMinutes": 11
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-5060",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-5060: Avoid unhandled exceptions",
+        "filePath": "sample/guidelines/guideline_8310_na.sql",
+        "textRange": {
+          "startLine": 36,
+          "endLine": 39,
+          "startColumn": 6,
+          "endColumn": 42
+        }
+      },
+      "effortMinutes": 11
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_8410_na.sql",
+        "textRange": {
+          "startLine": 17,
+          "endLine": 17,
+          "startColumn": 26,
+          "endColumn": 50
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_8410_na.sql",
+        "textRange": {
+          "startLine": 23,
+          "endLine": 23,
+          "startColumn": 26,
+          "endColumn": 50
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-5040",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-5040: Avoid use of WHEN OTHERS clause in an exception section without any other specific handlers.",
+        "filePath": "sample/guidelines/guideline_8410_na.sql",
+        "textRange": {
+          "startLine": 38,
+          "endLine": 38,
+          "startColumn": 8,
+          "endColumn": 14
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_8410_na.sql",
+        "textRange": {
+          "startLine": 49,
+          "endLine": 49,
+          "startColumn": 6,
+          "endColumn": 38
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_8410_na.sql",
+        "textRange": {
+          "startLine": 50,
+          "endLine": 50,
+          "startColumn": 6,
+          "endColumn": 46
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_8410_na.sql",
+        "textRange": {
+          "startLine": 71,
+          "endLine": 71,
+          "startColumn": 26,
+          "endColumn": 52
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-5040",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-5040: Avoid use of WHEN OTHERS clause in an exception section without any other specific handlers.",
+        "filePath": "sample/guidelines/guideline_8410_na.sql",
+        "textRange": {
+          "startLine": 89,
+          "endLine": 89,
+          "startColumn": 8,
+          "endColumn": 14
+        }
+      },
+      "effortMinutes": 2
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-4385",
+      "severity": "MAJOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-4385: Never use a cursor for loop to check whether a cursor returns data.",
+        "filePath": "sample/guidelines/guideline_8510_na.sql",
+        "textRange": {
+          "startLine": 12,
+          "endLine": 19,
+          "startColumn": 6,
+          "endColumn": 24
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_9010_na.sql",
+        "textRange": {
+          "startLine": 16,
+          "endLine": 16,
+          "startColumn": 21,
+          "endColumn": 65
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_9010_na.sql",
+        "textRange": {
+          "startLine": 17,
+          "endLine": 17,
+          "startColumn": 21,
+          "endColumn": 47
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-9010",
+      "severity": "MAJOR",
+      "type": "VULNERABILITY",
+      "primaryLocation": {
+        "message": "G-9010: Always use a format model in string to date/time conversion functions.",
+        "filePath": "sample/guidelines/guideline_9010_na.sql",
+        "textRange": {
+          "startLine": 20,
+          "endLine": 20,
+          "startColumn": 29,
+          "endColumn": 48
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-9030",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-9030: Try to define a default value on conversion errors.",
+        "filePath": "sample/guidelines/guideline_9010_na.sql",
+        "textRange": {
+          "startLine": 20,
+          "endLine": 20,
+          "startColumn": 29,
+          "endColumn": 48
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_9010_na.sql",
+        "textRange": {
+          "startLine": 28,
+          "endLine": 28,
+          "startColumn": 21,
+          "endColumn": 65
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_9010_na.sql",
+        "textRange": {
+          "startLine": 29,
+          "endLine": 29,
+          "startColumn": 21,
+          "endColumn": 47
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-9030",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-9030: Try to define a default value on conversion errors.",
+        "filePath": "sample/guidelines/guideline_9010_na.sql",
+        "textRange": {
+          "startLine": 32,
+          "endLine": 32,
+          "startColumn": 29,
+          "endColumn": 61
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-9040",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-9040: Try using FX in string to date/time conversion format model to avoid fuzzy conversion.",
+        "filePath": "sample/guidelines/guideline_9010_na.sql",
+        "textRange": {
+          "startLine": 32,
+          "endLine": 32,
+          "startColumn": 48,
+          "endColumn": 60
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_9020_na.sql",
+        "textRange": {
+          "startLine": 18,
+          "endLine": 18,
+          "startColumn": 24,
+          "endColumn": 68
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_9020_na.sql",
+        "textRange": {
+          "startLine": 19,
+          "endLine": 19,
+          "startColumn": 24,
+          "endColumn": 50
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-9020",
+      "severity": "MAJOR",
+      "type": "VULNERABILITY",
+      "primaryLocation": {
+        "message": "G-9020: Try to use a format model and NLS_NUMERIC_CHARACTERS in string to number conversion functions.",
+        "filePath": "sample/guidelines/guideline_9020_na.sql",
+        "textRange": {
+          "startLine": 22,
+          "endLine": 22,
+          "startColumn": 22,
+          "endColumn": 42
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-9030",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-9030: Try to define a default value on conversion errors.",
+        "filePath": "sample/guidelines/guideline_9020_na.sql",
+        "textRange": {
+          "startLine": 22,
+          "endLine": 22,
+          "startColumn": 22,
+          "endColumn": 42
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_9020_na.sql",
+        "textRange": {
+          "startLine": 30,
+          "endLine": 30,
+          "startColumn": 24,
+          "endColumn": 68
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_9020_na.sql",
+        "textRange": {
+          "startLine": 31,
+          "endLine": 31,
+          "startColumn": 24,
+          "endColumn": 50
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-9030",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-9030: Try to define a default value on conversion errors.",
+        "filePath": "sample/guidelines/guideline_9020_na.sql",
+        "textRange": {
+          "startLine": 34,
+          "endLine": 34,
+          "startColumn": 22,
+          "endColumn": 104
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_9030_na.sql",
+        "textRange": {
+          "startLine": 14,
+          "endLine": 14,
+          "startColumn": 21,
+          "endColumn": 65
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_9030_na.sql",
+        "textRange": {
+          "startLine": 15,
+          "endLine": 15,
+          "startColumn": 21,
+          "endColumn": 47
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-9030",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-9030: Try to define a default value on conversion errors.",
+        "filePath": "sample/guidelines/guideline_9030_na.sql",
+        "textRange": {
+          "startLine": 18,
+          "endLine": 18,
+          "startColumn": 29,
+          "endColumn": 61
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-9040",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-9040: Try using FX in string to date/time conversion format model to avoid fuzzy conversion.",
+        "filePath": "sample/guidelines/guideline_9030_na.sql",
+        "textRange": {
+          "startLine": 18,
+          "endLine": 18,
+          "startColumn": 48,
+          "endColumn": 60
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_9030_na.sql",
+        "textRange": {
+          "startLine": 27,
+          "endLine": 27,
+          "startColumn": 21,
+          "endColumn": 65
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_9030_na.sql",
+        "textRange": {
+          "startLine": 28,
+          "endLine": 28,
+          "startColumn": 21,
+          "endColumn": 47
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-9040",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-9040: Try using FX in string to date/time conversion format model to avoid fuzzy conversion.",
+        "filePath": "sample/guidelines/guideline_9030_na.sql",
+        "textRange": {
+          "startLine": 31,
+          "endLine": 31,
+          "startColumn": 81,
+          "endColumn": 93
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_9040_na.sql",
+        "textRange": {
+          "startLine": 16,
+          "endLine": 16,
+          "startColumn": 21,
+          "endColumn": 65
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_9040_na.sql",
+        "textRange": {
+          "startLine": 17,
+          "endLine": 17,
+          "startColumn": 21,
+          "endColumn": 47
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-9030",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-9030: Try to define a default value on conversion errors.",
+        "filePath": "sample/guidelines/guideline_9040_na.sql",
+        "textRange": {
+          "startLine": 20,
+          "endLine": 20,
+          "startColumn": 29,
+          "endColumn": 61
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-9040",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-9040: Try using FX in string to date/time conversion format model to avoid fuzzy conversion.",
+        "filePath": "sample/guidelines/guideline_9040_na.sql",
+        "textRange": {
+          "startLine": 20,
+          "endLine": 20,
+          "startColumn": 48,
+          "endColumn": 60
+        }
+      },
+      "effortMinutes": 7
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_9040_na.sql",
+        "textRange": {
+          "startLine": 28,
+          "endLine": 28,
+          "startColumn": 21,
+          "endColumn": 65
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_9040_na.sql",
+        "textRange": {
+          "startLine": 29,
+          "endLine": 29,
+          "startColumn": 21,
+          "endColumn": 47
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-9030",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-9030: Try to define a default value on conversion errors.",
+        "filePath": "sample/guidelines/guideline_9040_na.sql",
+        "textRange": {
+          "startLine": 32,
+          "endLine": 32,
+          "startColumn": 29,
+          "endColumn": 63
+        }
+      },
+      "effortMinutes": 6
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_na_54.sql",
+        "textRange": {
+          "startLine": 18,
+          "endLine": 18,
+          "startColumn": 28,
+          "endColumn": 43
+        }
+      },
+      "effortMinutes": 3
+    },
+    {
+      "engineId": "db* CODECOP",
+      "ruleId": "G-8310",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
+      "primaryLocation": {
+        "message": "G-8310: Always validate input parameter size by assigning the parameter to a size limited variable in the declaration section of program unit.",
+        "filePath": "sample/guidelines/guideline_na_54.sql",
+        "textRange": {
+          "startLine": 50,
+          "endLine": 50,
+          "startColumn": 28,
+          "endColumn": 43
+        }
+      },
+      "effortMinutes": 3
+    }
+  ]
+}
