@@ -4,7 +4,7 @@ These document covers the known limitations of parsing SQL*Plus, SQL and PL/SQL 
 
 ## Maxim
 
-If your SQL*Plus script runs successfully against an Oracle database but db\* CODECOP or PL/SQL Analyzer reports an error, this is usually considered a bug. However, there are some known exceptions to this basic principle, which are documented below.
+If your SQL*Plus script runs successfully against an Oracle database but db\* CODECOP reports an error, this is usually considered a bug. However, there are some known exceptions to this basic principle, which are documented below.
 
 ## SQL\*Plus Parser
 
