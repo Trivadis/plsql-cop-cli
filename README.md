@@ -79,6 +79,7 @@ options:
   template=<name>        file name incl. path of XSL stylesheet to create HTML output, e.g ./myhtml.xsl
   excel={true|false}     create Excel output file, default is true
   html={true|false}      create HTML output file, default is true
+  json={true|false}      create SonarQube generic issue import JSON file, default is true
   transonly={true|false} transform temporary XML file only, default is false
   cleanup={true|false}   remove temporary XML file, default is true
   check=<list>           comma separated list of guidelines, severities, characteristics to be checked,
@@ -90,6 +91,7 @@ options:
                          invalid values are ignored
   skip=<list>            comma separated list of guidelines, serverities, characteristics not to be checked,
                          e.g. "7460, info, portability, testability", invalid values are ignored
+                         skips disabled guidelines when empty
   nosonar=false          ignore "-- NOSONAR" marker comments (do not suppress warnings)
   license=<name>         name incl. path to license file, default tvdcc.lic in the root folder
   propertyfile=<name>    load properties from file, e.g. ./tvdcc.properties
