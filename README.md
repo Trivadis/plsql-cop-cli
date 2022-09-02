@@ -108,7 +108,9 @@ options:
 
 Please note that db\* CODECOP applies by default a filter to support the following file extensions: `.sql`, `.prc`, `.fnc`, `.pks`, `.pkb`, `.trg`, `.vw`, `.tps`, `.tpb`, `.tbp`, `.plb`, `.pls`, `.rcv`, `.spc`, `.typ`, `.aqt`, `.aqp`, `.ctx`, `.dbl`, `.tab`, `.dim`, `.snp`, `.con`, `.collt`, `.seq`, `.syn`, `.grt`, `.sp`, `.spb`, `.sps`, `.pck`, `.md`, `.mdown`. To process other or additional file extensions, you must pass your own filter expression.
 
-The value of all options will be included in the output files and on the console output. 
+The value of all options will be included in the output files and on the console output.
+
+Guideline checks can be disabled when implementing a validator. When the `skip` option is not defined then all disabled guideines are skipped. To enable all checks pass `skip=none`.
 
 ## Issues
 Please file your bug reports, enhancement requests, questions and other support requests within [Github's issue tracker](https://help.github.com/articles/about-issues/).
