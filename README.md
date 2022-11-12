@@ -114,14 +114,6 @@ Guideline checks can be disabled when implementing a validator. When the `skip` 
 
 The value of all options will be included in the output files and on the console output.
 
-## Issues
-Please file your bug reports, enhancement requests, questions and other support requests within [Github's issue tracker](https://help.github.com/articles/about-issues/).
-
-* [Questions](https://github.com/trivadis/plsql-cop-cli/issues?q=is%3Aissue+label%3Aquestion)
-* [Open enhancements](https://github.com/trivadis/plsql-cop-cli/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement)
-* [Open bugs](https://github.com/trivadis/plsql-cop-cli/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
-* [Submit new issue](https://github.com/trivadis/plsql-cop-cli/issues/new)
-
 ## Frequently Asked Questions
 
 see [Frequently Ased Questions](FAQ.md).
