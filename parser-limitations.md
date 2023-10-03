@@ -105,6 +105,31 @@ The following quote characters-pairs are supported:
 
 All other quote characters lead to parse errors.
 
+## Identifiers
+
+The parsers supports only the following characters in unquoted identifiers:
+
+First position:
+
+- `a` to `z`
+- `A` to `Z`
+
+Position 2ff:
+
+- `a` to `z`
+- `A` to `Z`
+- `0` to `9` 
+- `_`
+- `$`
+- `#`
+- `ä`/`Ä`
+- `ö`/`Ö`
+- `ü`/`Ü`
+
+The following error is thrown when other letters are used in an identifier: `E-0002: Syntax error. Please check the limitations and contact the author if the code can be compiled successfully in your environment.`
+
+As a workaround you can use [quoted identifiers](https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/plsql-language-fundamentals.html#GUID-C4B3F788-770E-48F8-9A44-ACD7977B1545).
+
 ## Conditional Compilation
 
 Up until db\* CODECOP version 1.0.16, db\* CODECOP for SQL Developer 1.0.12, PL/SQL Analyzer 1.0.7 conditional compilation blocks have been fully analysed in the PL/SQL body, but were not supported in the PL/SQL DECLARE section.
