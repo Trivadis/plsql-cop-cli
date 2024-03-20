@@ -345,18 +345,13 @@ from emp
 
 ## Supported Oracle Versions
 
-The PL/SQL and SQL grammars from Oracle version 7.0 until version 21c are supported. 
+The PL/SQL and SQL grammars from Oracle version 7.0 until version 23c are supported. 
 
 The grammar implementation is based on the following documentation:
 
-- [Oracle® SQLcl, User's Guide, Release 21.1, F40621-01, April 2021](https://docs.oracle.com/en/database/oracle/sql-developer-command-line/21.1/sqcug/)
-- Long Term Release 19c
-    - [SQL\*Plus®, User's Guide and Reference, 19c, E96459-05, July 2020](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqpug/)
-    - [Oracle® Database SQL Language Reference, 19c, E96310-08, February 2021](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/)
-    - [Oracle® Database Database, PL/SQL Language Reference, 19c E96448-03, August 2020](https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/)
-- Innovation Release 21c
-    - [SQL\*Plus®, User's Guide and Reference, 21c, F31846-02, December 2020](https://docs.oracle.com/en/database/oracle/oracle-database/21/sqpug/)
-    - [Oracle® Database, SQL Language Reference, 21c, F31301-02, February 2021](https://docs.oracle.com/en/database/oracle/oracle-database/21/sqlrf/)
-    - [Oracle® Database, Database PL/SQL Language Reference, 21c, F31827-01, November 2020](https://docs.oracle.com/en/database/oracle/oracle-database/21/lnpls/)
+- [Oracle® SQLcl, User's Guide, Release 23.4, F89904-01, January 2024](https://docs.oracle.com/en/database/oracle/sql-developer-command-line/23.4/sqcug/)
+- [SQL\*Plus®, User's Guide and Reference, 23c, F47057-03, September 2023](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqpug/)
+- [Oracle® Database SQL Language Reference, 23c, F47038-11, March 2024](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/)
+- [Oracle® Database Database, PL/SQL Language Reference, 23c F46753-04, September 2023](https://docs.oracle.com/en/database/oracle/oracle-database/23/lnpls/)
 
-Grammar changes and enhancements made in newer versions are not yet covered.
+Grammar changes and enhancements made in newer versions are not covered.
