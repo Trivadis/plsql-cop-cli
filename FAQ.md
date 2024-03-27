@@ -34,4 +34,4 @@ The preview/trial version of db\* CODECOP is licensed under the Creative Commons
 
 The trial/preview version provides full functionality but is limited in time and volume.
 
-For production use a separate software license agreement is required.
+For production use a separate software license agreement is required. Please contact [Roland Stirnimann](mailto:roland.stirnimann@accenture.com) for details
